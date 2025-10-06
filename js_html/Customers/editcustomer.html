@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Admin</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+            <!-- cái topbar -->
+        <section>
+            <div class="topbar">
+                <a href="../Products/home.html">Trang chủ</a>
+                <a href="../Customers/customers.html">Khách hàng</a>
+                <a href="../Products/products.html">Sản phẩm</a>
+                <a href="../Manage/Mangage.html">Đơn hàng</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Thống kê</button>
+                        <div class="dropdown-content">
+                        <div>
+                        <h4>Top 5 khách hàng</h4>
+                        <p>Danh sách khách hàng mua nhiều nhất.</p>
+                        <a href="../Summary/topcustomers.html">Xem chi tiết</a>
+                        </div>
+
+                        <div>
+                        <h4>Danh sách đơn hàng</h4>
+                        <p>Xem tất cả các đơn hàng chi tiết.</p>
+                        <a href="../Summary/orders.html">Xem chi tiết</a>
+                        </div>
+
+                       
+                    </div>
+
+                </div>
+                
+            </div>
+    
+            </div>
+            <div class="admin-box">
+              <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo">
+              <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo"></a>
+              <h3>Admin/</h3>
+              <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+            </div>        
+          </section>
+
+        <!-- Nút quay lại -->
+        <div>
+                <a href="customers.html"><button class="back-btn">Quay lại</button></a>
+        </div>
+
+        <!-- Form chỉnh sửa khách hàng -->
+        <section>        
+            <div class="edit-box">
+                <h2>Chỉnh sửa khách hàng</h2>
+                <form>
+                    <label for="id">Mã khách hàng:</label>
+                    <input type="text" id="id" name="id" value="1">
+
+                    <label for="fullname">Họ và tên:</label>
+                    <input type="text" id="fullname" name="fullname" value="Nguyễn Văn A">
+
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" id="phone" name="phone" value="0123456789">
+
+                    <label for="password">Mật khẩu:</label>
+                    <input type="text" id="password" name="password" value="password123">
+
+                    <label for="spent">Tổng tiền đã mua:</label>
+                    <input type="text" id="spent" name="spent" value="1,000,000">
+
+                    <button>Lưu</button>
+                </form>
+            </div>
+        </section>
+
+    </body>
+
+    </body>
+</html>
