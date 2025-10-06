@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Admin</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+            <!-- cái sidebar -->
+        <section>
+            <div class="topbar">
+                <a href="../Products/home.html">Trang chủ</a>
+                <a href="../Customers/customers.html">Khách hàng</a>
+                <a href="../Products/products.html">Sản phẩm</a>
+                <a href="../Manage/Mangage.html">Đơn hàng</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Thống kê</button>
+                        <div class="dropdown-content">
+                        <div>
+                        <h4>Top 5 khách hàng</h4>
+                        <p>Danh sách khách hàng mua nhiều nhất.</p>
+                        <a href="../Summary/topcustomers.html">Xem chi tiết</a>
+                        </div>
+
+                        <div>
+                        <h4>Danh sách đơn hàng</h4>
+                        <p>Xem tất cả các đơn hàng chi tiết.</p>
+                        <a href="../Summary/orders.html">Xem chi tiết</a>
+                        </div>
+
+                       
+                    </div>
+
+                </div>
+                
+            </div>
+    
+            </div>
+            <div class="admin-box">
+              <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo">
+              <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo"></a>
+              <h3>Admin/</h3>
+              <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+            </div>        
+          </section>
+
+            
+        <section>     
+               <!-- Thanh tìm kiếm  -->
+            <div class="content edit-products">
+                <h2 align="center">Quản lý sản phẩm</h2>
+                <div class="search-bar">
+                <select>     
+                    <option>Lọc giá</option>
+                    <option>Lọc theo vẻ đẹp</option>
+                    
+                </select>
+                <input type="text" placeholder="🔍 Tìm món nước...">
+                <button onclick="window.location.href='searchproduct.html'">Tìm kiếm</button>
+                </div>
+                <!-- Khung thông báo đã xóa sản phẩm -->
+                <div class="success-message">Đã xóa thành công</div>
+                <!-- Hiển thị bảng sản phẩm --> 
+
+                <div id="products" class="products-container">  
+                    <div class="card">
+                    <div class="discount">30%</div>
+                    <img src="../../images/Trà vải.jpg" alt="Trà vải">
+                    <div class="title">Trà vải</div>
+                    <div class="price">49.000 VNĐ</div>
+                    <div class="edit-products">
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <div class="discount">30%</div>
+                    <img src="../../images/Trà đào.jpg" alt="Trà đào">
+                    <div class="title">Trà đào</div>
+                    <div class="price">49.000 VNĐ</div>
+                    <div class="edit-products">
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <div class="discount">30%</div>
+                    <img src="../../images/Trà đào.jpg" alt="Trà đào">
+                    <div class="title">Trà đào</div>
+                    <div class="price">49.000 VNĐ</div>
+                    <div class="edit-products">
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <div class="discount">30%</div>
+                    <img src="../../images/Trà đào.jpg" alt="Trà đào">
+                    <div class="title">Trà đào</div>
+                    <div class="price">49.000 VNĐ</div>
+                    <div class="edit-products">
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <div class="discount">30%</div>
+                    <img src="../../images/Trà đào.jpg" alt="Trà đào">
+                    <div class="title">Trà đào</div>
+                    <div class="price">49.000 VNĐ</div>
+                    <div class="edit-products">
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <div class="discount">30%</div>
+                    <img src="../../images/Trà đào.jpg" alt="Trà đào">
+                    <div class="title">Trà đào</div>
+                    <div class="price">49.000 VNĐ</div>
+                    <div class="edit-products">
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                    <div class="discount">30%</div>
+                    <img src="../../images/Trà đào.jpg" alt="Trà đào">
+                    <div class="title">Trà đào</div>
+                    <div class="price">49.000 VNĐ</div>
+                    <div class="edit-products">
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
