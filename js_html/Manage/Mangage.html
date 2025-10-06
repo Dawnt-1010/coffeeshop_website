@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Amin</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+          
+          <!-- Thanh topbar -->
+          <section>
+            <div class="topbar">
+                <a href="../Products/home.html">Trang chủ</a>
+                <a href="../Customers/customers.html">Khách hàng</a>
+                <a href="../Products/products.html">Sản phẩm</a>
+                <a href="../Manage/Mangage.html">Đơn hàng</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Thống kê</button>
+                        <div class="dropdown-content">
+                        <div>
+                        <h4>Top 5 khách hàng</h4>
+                        <p>Danh sách khách hàng mua nhiều nhất.</p>
+                        <a href="../Summary/topcustomers.html">Xem chi tiết</a>
+                        </div>
+
+                        <div>
+                        <h4>Danh sách đơn hàng</h4>
+                        <p>Xem tất cả các đơn hàng chi tiết.</p>
+                        <a href="../Summary/orders.html">Xem chi tiết</a>
+                        </div>
+
+                       
+                    </div>
+
+                </div>
+                
+            </div>
+    
+            </div>
+            <div class="admin-box">
+              <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo">
+              <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo"></a>
+              <h3>Admin/</h3>
+              <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+            </div>        
+          </section>
+   
+  
+    <!-- Thanh lọc và tìm kiếm và thêm đơn hàng -->
+          <!-- Tìm kiếm đơn hàng -->
+   <section>  
+      <div id="customers" class = "content edit-products" align="center">
+        <h2>Quản lý đơn hàng</h2>
+        <div class="search-bar">
+        <input type="date">
+        <select>
+          <option>--Tình trạng đơn hàng</option>
+          <option>Đang giao</option>
+          <option>Chưa giao</option>
+          <option>Đã nhận</option>
+          <option>Hủy</option>
+        </select>
+        <input type="text" placeholder="🔍 Tìm khách hàng...">
+        <button onclick="window.location.href='timkiem.html'">Tìm kiếm</button>
+        </div>
+        <!-- Thêm đơn hàng -->
+        <div class="search-bar">
+        <input type="text" placeholder="Nhập đơn hàng">
+        <input type="text" placeholder="Nhập kho">
+        <select>
+            <option>--Tình trạng đơn hàng</option>
+            <option>Đang giao</option>
+            <option>Chưa giao</option>
+            <option>Đã nhận</option>
+            <option>Hủy</option>
+        </select>
+        <input type="date">
+        <a href="add.html"><button>Thêm</button></a>
+      </div>
+        
+    
+
+      <!-- Bảng quản lý -->
+          <div class="product-card">
+          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 1</span></div>
+          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
+          <div class="actions">
+              <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
+              <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              
+          </div>
+          </div>
+
+          <div class="product-card">
+          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 2</span></div>
+          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
+          <div class="actions">
+              <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
+              <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              
+          </div>
+          </div>
+
+          <div class="product-card">
+          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 3</span></div>
+          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
+          <div class="actions">
+              <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
+              <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              
+          </div>
+          </div>
+
+          <div class="product-card">
+          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 4</span></div>
+          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
+          <div class="actions">
+            <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
+            <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              
+          </div>
+          </div>
+          
+          <div class="product-card">
+          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 5</span></div>
+          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
+          <div class="actions">
+            <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
+            <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              
+          </div>
+          </div>
+
+        </div>
+       </section>
+  </body>
+</html>
