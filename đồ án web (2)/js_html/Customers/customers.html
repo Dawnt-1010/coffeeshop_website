@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Admin</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/style.css">
+    </head>
+    <body>
+            <!-- cái topbar -->
+        <section>
+            <div class="topbar">
+                <a href="../Products/home.html">Trang chủ</a>
+                <a href="../Customers/customers.html">Khách hàng</a>
+                <a href="../Products/products.html">Sản phẩm</a>
+                <a href="../Manage/Mangage.html">Đơn hàng</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Thống kê</button>
+                        <div class="dropdown-content">
+                        <div>
+                        <h4>Top 5 khách hàng</h4>
+                        <p>Danh sách khách hàng mua nhiều nhất.</p>
+                        <a href="../Summary/topcustomers.html">Xem chi tiết</a>
+                        </div>
+
+                        <div>
+                        <h4>Danh sách đơn hàng</h4>
+                        <p>Xem tất cả các đơn hàng chi tiết.</p>
+                        <a href="../Summary/orders.html">Xem chi tiết</a>
+                        </div>
+
+                       
+                    </div>
+
+                </div>
+                
+            </div>
+    
+            </div>
+            <div class="admin-box">
+              <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo">
+              <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo"></a>
+              <h3>Admin/</h3>
+              <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+            </div>        
+          </section>
+
+        
+        <section>
+             <!-- Bảng để hiển thị khách hàng -->
+              
+             <div id="customers" class = "content edit-products" align="center">
+                <h2>Quản lý khách hàng</h2>
+                <div class="search-bar">
+                <select>     
+                    <option>Lọc theo họ tên</option>
+                    <option>Lọc theo số điện thoại</option>
+                </select>
+                <input type="text" placeholder="🔍 Tìm khách hàng...">
+                <button onclick="window.location.href='searchcustomers.html'">Tìm kiếm</button>
+                </div>
+                <div class="customer-card">
+                <div class="col"><span class="label">Mã KH</span><span class="value">1</span></div>
+                <div class="col"><span class="label">Họ và tên</span><span class="value">Nguyễn Văn A</span></div>
+                <div class="col"><span class="label">SĐT</span><span class="value">012345678</span></div>
+                <div class="col"><span class="label">Mật khẩu</span><span class="value">password123</span></div>
+                <div class="col"><span class="label">Tổng tiền</span><span class="value">1,000,000</span></div>
+                <div class="actions">
+                    <button class="edit" onclick="window.location.href='editcustomer.html'">Sửa</button>
+                    <button class="delete" onclick="window.location.href='lockcustomer.html'">Khóa</button>
+                    
+                </div>
+                </div>
+
+                <div class="customer-card">
+                <div class="col"><span class="label">Mã KH</span><span class="value">2</span></div>
+                <div class="col"><span class="label">Họ và tên</span><span class="value">Lê Thị B</span></div>
+                <div class="col"><span class="label">SĐT</span><span class="value">0312456789</span></div>
+                <div class="col"><span class="label">Mật khẩu</span><span class="value">password321</span></div>
+                <div class="col"><span class="label">Tổng tiền</span><span class="value">2,000,000</span></div>
+                <div class="actions">
+                    <button class="edit">Sửa</button>
+                    <button class="delete">Khóa</button>
+                </div>
+                </div>
+                <div class="customer-card">
+                <div class="col"><span class="label">Mã KH</span><span class="value">1</span></div>
+                <div class="col"><span class="label">Họ và tên</span><span class="value">Nguyễn Văn A</span></div>
+                <div class="col"><span class="label">SĐT</span><span class="value">012345678</span></div>
+                <div class="col"><span class="label">Mật khẩu</span><span class="value">password123</span></div>
+                <div class="col"><span class="label">Tổng tiền</span><span class="value">1,000,000</span></div>
+                <div class="actions">
+                    <button class="edit">Sửa</button>
+                    <button class="delete">Khóa</button>
+                </div>
+                </div>
+
+                <div class="customer-card">
+                <div class="col"><span class="label">Mã KH</span><span class="value">2</span></div>
+                <div class="col"><span class="label">Họ và tên</span><span class="value">Lê Thị B</span></div>
+                <div class="col"><span class="label">SĐT</span><span class="value">0312456789</span></div>
+                <div class="col"><span class="label">Mật khẩu</span><span class="value">password321</span></div>
+                <div class="col"><span class="label">Tổng tiền</span><span class="value">2,000,000</span></div>
+                <div class="actions">
+                    <button class="edit">Sửa</button>
+                    <button class="delete">Khóa</button>
+                </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+    </body>
+</html>
