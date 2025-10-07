@@ -824,4 +824,52 @@ input[name="slide"] {
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 5px;
+}}
+/*  */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
 }
+
+.pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+  color: #999;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Nút số trang */
+.pagination a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Trang hiện tại */
+.pagination a.active {
+  background-color: #FFC43F; 
+  color: white;
+  font-weight: 600;
+}
+
+/* Mũi tên trái/phải */
+.pagination a.prev,
+.pagination a.next {
+  font-size: 18px;
+  color: #f8f6f6;
+  width: auto;
+  padding: 0 10px;
+}
+
+.pagination a.prev:hover,
+.pagination a.next:hover {
+  color: #333;
+}
+
