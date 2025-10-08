@@ -527,6 +527,14 @@
         </div>
       </div>
     </section>
+     <div class="pagination">
+  <a href="#" class="prev">&lt;</a>
+  <a href="index.html" class="active">1</a>
+  <a href="index.html">2</a>
+  <a href="index.html">3</a>
+  <a href="index.html">4</a>
+  <a href="#" class="next">&gt;</a>
+  </div>
     <div id="footer-bottom">
       <div class="container-fluid">
         <div class="row">
@@ -538,5 +546,21 @@
         </div>
       </div>
     </div>
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".main-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

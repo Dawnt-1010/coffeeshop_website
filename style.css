@@ -816,7 +816,6 @@ input[name="slide"] {
   display: flex;
   justify-content: space-between;
 }
-
 .prev, .next {
   font-size: 30px;
   color: #fff;

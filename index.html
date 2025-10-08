@@ -162,7 +162,7 @@
                 <div class="swiper main-swiper">
                   <div class="swiper-wrapper">
                     
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="background-image: url('images/background-banner.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
                       <div class="row banner-content p-5">
                         <div class="content-wrapper col-md-7">
                           <div class="categories my-3">100% từ thiên nhiên</div>
@@ -224,7 +224,7 @@
 
             <div class="bootstrap-tabs product-tabs">
               <div class="tabs-header d-flex justify-content-between border-bottom my-5">
-                <h2 id="HOT">Sản Phẩm HOT</h2>
+                <h2>Sản Phẩm HOT</h2>
                 <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a href="HOT"></a>
@@ -547,10 +547,10 @@
 
     <div class="pagination">
   <a href="#" class="prev">&lt;</a>
-  <a href="#" class="active">1</a>
-  <a href="#">2</a>
-  <a href="#">3</a>
-  <a href="#">4</a>
+  <a href="index.html" class="active">1</a>
+  <a href="index.html">2</a>
+  <a href="index.html">3</a>
+  <a href="index.html">4</a>
   <a href="#" class="next">&gt;</a>
   </div>
 
@@ -562,10 +562,25 @@
             <p>©2025_coffeeshop.created by 4TL.</p>
           </div>
           <div class="col-md-6 credit-link text-start text-md-end">
-            <!-- <p>Free HTML Template by <a href="https://templatesjungle.com/">TemplatesJungle</a> Distributed by <a href="https://themewagon">ThemeWagon</a></p> -->
           </div>
         </div>
       </div>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".main-swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
