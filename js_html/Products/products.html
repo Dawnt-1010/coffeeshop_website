@@ -59,6 +59,7 @@
                 <input type="text" placeholder="🔍 Tìm món nước...">
                 <button onclick="window.location.href='searchproduct.html'">Tìm kiếm</button>
                 </div>
+                <button class="btn-add" onclick="window.location.href='addproduct.html'">+ Thêm sản phẩm</button>
                 <div id="products" class="products-container">  
                     <div class="card">
                     <div class="discount">30%</div>
@@ -67,7 +68,7 @@
                     <div class="price">49.000 VNĐ</div>
                     <div class="edit-products">
                     <button onclick="window.location.href='editproduct.html'">Sửa</button>
-                    <button onclick="window.location.href='eraseproduct.html'">Xóa</button>
+                    <button onclick="if (confirm('Bạn có chắc chắn muốn xóa không?')) {window.location.href='eraseproduct.html'} else { alert('Hủy xóa!'); }">Xóa</button>
                     </div>
                     </div>
 

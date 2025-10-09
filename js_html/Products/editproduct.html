@@ -47,11 +47,22 @@
                 <h2>Chỉnh sửa sản phẩm</h2>
                 <form>
                     <img class="under-image" src="../../images/Trà đào.jpg" alt="Trà đào">
+
+                    <label class="custom-file-upload" for="image">Chọn ảnh mới:</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+
                     <label for="name">Tên sản phẩm:</label>
                     <input type="text" id="name" name="name" value="Trà đào">
 
                     <label for="price">Giá:</label>
                     <input type="text" id="price" name="price" value="$18.00">
+
+                    <label for="type">Loại:</label>
+                    <select name="type">
+                        <option value="tea">Trà</option>
+                        <option value="coffee">Cafe</option>
+                        <option value="smoothie">Sinh tố</option>
+                    </select>
                     
                     <label for="sale">Khuyến mãi:</label>
                     <input type="text" id="sale" name="sale" value="30%">

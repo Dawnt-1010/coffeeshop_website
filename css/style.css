@@ -130,6 +130,20 @@ body {
   background-color: #f44336; /* đỏ xóa */
   color: white;
 } 
+.btn-add {
+    background-color: #4CAF50; /* xanh lá */
+    color: white;
+    font-weight: bold;
+    padding: 8px 150px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #3e8e41;
+}
 
 
 
@@ -285,7 +299,7 @@ body {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  height: 600px;
+  height: 750px;
   width: 400px;
   text-align: left;
 }
@@ -303,7 +317,22 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+input[type="file"] {
+  display: none; /* Ẩn input mặc định */
+}
 
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f5f5f5;
+  transition: background 0.3s;
+}
+.custom-file-upload:hover {
+  background: #e2e2e2;
+}
 .edit-box button {
   width: 100%;
   padding: 10px;
