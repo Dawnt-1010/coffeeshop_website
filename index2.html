@@ -76,49 +76,30 @@
    <header>
       <div class="container-fluid"  style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
        <div class="container-fluid">
-        <div class="row py-3 border-bottom" >
-          <div class="col-sm-3 col-lg-2 text-center text-sm-start">
-            <div class="main-logo">
-              <a href="index2.html">
-                <img src="images/logo2.png" alt="logo" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          
-          <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-6 d-none d-lg-block">
-            <div class="search-bar row bg-light p-2 my-2 rounded-4">
-              <div class="col-md-4 d-none d-md-block">
-                <select class="form-select border-0 bg-transparent">
-                  <option>Tất Cả Sản Phẩm</option>
-                  <option>TRÀ</option>
-                  <option>CÀ PHÊ</option>
-                  <option>TRÀ SỮA</option>
-                </select>
+         <!-- Hàng 1: Logo + Thanh tìm kiếm + Icon -->
+      <div class="row py-3 border-bottom align-items-center">
+        <!-- Logo -->
+        <div class="col-12 col-lg-2 text-center text-lg-start mb-3 mb-lg-0">
+          <a href="index.html">
+            <img src="images/logo2.png" alt="logo" class="img-fluid">
+          </a>
+        </div>
 
-              </div>
-              <div class="col-5 col-md-3">
-                <select class="form-select border-0 bg-transparent">
-                  <option>Giá</option>
-                  <option>Thấp-> Cao</option>
-                  <option>Cao-> Thấp</option>
-                </select>
-              </div>
-              <div class="col-5 col-md-3">
-                <form id="search-form" class="text-center" action="index.html" method="post">
-                  <input type="text" class="form-control border-0 bg-transparent" placeholder="Tìm Thử Coiiiii" />
-                </form>
-              </div>
-              <!-- Icon kính lúp có thể bấm -->
-               <div class="col-1 d-flex align-items-center justify-content-center">
-              <a href="#HOT" class="text-dark">
-               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"/>
+        <!-- Thanh tìm kiếm + icon cùng hàng -->
+        <div class="col-12 col-lg-10">
+          <div class="d-flex align-items-center justify-content-between">
+            <!-- Thanh tìm kiếm -->
+            <div class="search-bar flex-grow-1 bg-light p-2 border border-dark rounded-4 me-3">
+              <form id="search-form" class="d-flex align-items-center" action="index.html" method="post">
+                <input type="text" class="form-control border-0 bg-transparent" placeholder="Tìm Thử Coiiiii" />
+                <button type="submit" class="btn border-0 bg-transparent">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
                   </svg>
-                   </a>
-                  </div>
-               </div>
-              </div>
-          <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
+                </button>
+              </form>
+            </div>
+          <!-- <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end"> -->
                <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-3 align-items-center mt-4 mt-sm-0">
   <!-- Nút Văn A / Đăng xuất -->
 <a href="index.html" class="logout-btn">Văn A / Đăng xuất</a>
