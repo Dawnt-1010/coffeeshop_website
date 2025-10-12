@@ -52,34 +52,24 @@
       <div id="customers" class = "content edit-products" align="center">
         <h2>Quản lý đơn hàng</h2>
         <div class="search-bar">
-        <input type="date">
-        <select>
-          <option>--Tình trạng đơn hàng</option>
-          <option>Đang giao</option>
-          <option>Chưa giao</option>
-          <option>Đã nhận</option>
-          <option>Hủy</option>
+        <div class="search-row">
+          <label>Từ ngày:</label>
+          <input type="date" class="date-input">
+
+          <label>Đến ngày:</label>
+          <input type="date" class="date-input">
+
+        <select class="filter-select">
+          <option value="">--Tình trạng đơn hàng--</option>
+          <option value="dang-giao">Đang giao</option>
+          <option value="chua-giao">Chưa giao</option>
+          <option value="da-nhan">Đã nhận</option>
+          <option value="huy">Đã hủy</option>
         </select>
-        <input type="text" placeholder="🔍 Tìm khách hàng...">
+
+        <input type="text" class="search-input" placeholder="🔍 Tìm đơn hàng...">
         <button onclick="window.location.href='timkiem.html'">Tìm kiếm</button>
         </div>
-        <!-- Thêm đơn hàng -->
-        <div class="search-bar">
-        <input type="text" placeholder="Nhập đơn hàng">
-        <input type="text" placeholder="Nhập kho">
-        <select>
-            <option>--Tình trạng đơn hàng</option>
-            <option>Đang giao</option>
-            <option>Chưa giao</option>
-            <option>Đã nhận</option>
-            <option>Hủy</option>
-        </select>
-        <input type="date">
-        <a href="add.html"><button>Thêm</button></a>
-      </div>
-        
-    
-
       <!-- Bảng quản lý -->
           <div class="product-card">
           <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 1</span></div>
@@ -87,8 +77,7 @@
           <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
-              <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
-              <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>
@@ -96,11 +85,10 @@
           <div class="product-card">
           <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 2</span></div>
           <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đang giao</span></div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
-              <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
-              <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>
@@ -111,8 +99,7 @@
           <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
-              <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
-              <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+              <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>
@@ -120,11 +107,10 @@
           <div class="product-card">
           <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 4</span></div>
           <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Chưa giao</span></div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
-            <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
-            <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+            <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>
@@ -132,11 +118,10 @@
           <div class="product-card">
           <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 5</span></div>
           <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đang giao</span></div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
-            <button class="edit" onclick="window.location.href='edit.html'">Sửa</button>
-            <button class="delete" onclick="window.location.href='delete.html'">Xóa</button>
+            <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>

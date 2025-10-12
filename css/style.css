@@ -363,6 +363,7 @@ input[type="file"] {
   border-radius: 5px;
   font-weight: bold;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: inline-block;
 }
 /* Phần khách hàng card khách hàng */
 .customer-card {
@@ -714,12 +715,20 @@ button:hover {
 .drink-image {
   display: flex;
   justify-content: center; /* canh giữa ảnh */
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .drink-image img {
   max-width: 200px; /* giới hạn chiều rộng */
   height: auto;     /* giữ tỉ lệ ảnh */
+}
+.search-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Tự xuống hàng nếu màn hình nhỏ */
 }
 
 
