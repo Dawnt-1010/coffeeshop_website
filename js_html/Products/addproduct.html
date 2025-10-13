@@ -56,12 +56,20 @@
                     <label for="price">Giá:</label>
                     <input type="text" id="price" name="price" value="Giá tiền">
 
-                    <label for="type">Loại:</label>
-                    <select name="type">
-                        <option value="tea">Trà</option>
-                        <option value="coffee">Cafe</option>
-                        <option value="smoothie">Sinh tố</option>
-                    </select>
+                    <label for="loai">Loại:</label>
+                    <div class="loai-options">
+                    <input type="radio" id="tra" name="loai" value="Trà">
+                    <label for="tra">Trà</label>
+
+                    <input type="radio" id="caphe" name="loai" value="Cà phê">
+                    <label for="caphe">Cà phê</label>
+
+                    <input type="radio" id="sinhto" name="loai" value="Sinh tố">
+                    <label for="sinhto">Sinh tố</label>
+
+                    <input type="radio" id="nuocep" name="loai" value="Nước ép">
+                    <label for="nuocep">Nước ép</label>
+                    </div>
                     
                     <label for="sale">Khuyến mãi:</label>
                     <input type="text" id="sale" name="sale" value="Khuyến mãi">
