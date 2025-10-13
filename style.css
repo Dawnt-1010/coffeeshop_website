@@ -877,87 +877,80 @@ input[name="slide"] {
   outline: none !important;
   box-shadow: none !important;
 }
+.search-bar {
+  flex: 1 1 auto;
+  max-width: 900px;   /* Giới hạn độ rộng tối đa */
+  min-width: 250px;   /* Không cho co nhỏ hơn mức này */
+}
+
+.d-flex.align-items-center.gap-3.ms-auto.pe-3 {
+  flex-shrink: 0; /* Ngăn icon bị co lại hoặc đẩy xuống */
+}
+
 .navbar-nav {
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    position: relative;
-  }
-  .nav-item {
-    position: relative;
-    padding-bottom: 15px; /* vùng đệm để chuột di chuyển xuống menu con không bị tắt */
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  list-style: none;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+}
 
-  .nav-link {
-    color: #222;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-    padding: 8px 0;
-  }
+.nav-item {
+  position: relative;
+  white-space: nowrap;
+}
 
-  .nav-link:hover {
-    color: #c47b3a;
-  }
+/* ===== Hover mở dropdown ===== */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* giữ dropdown sát menu cha */
+}
 
-  /* --- Menu con --- */
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 10px); /* bắt đầu trượt nhẹ từ dưới lên */
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    min-width: 180px;
-    padding: 10px 0;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-    z-index: 999;
+.dropdown-menu {
+  border-radius: 12px;
+  padding: 0.5rem 0;
+  transition: all 0.2s ease;
+}
 
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.35s ease;
-    transition-delay: 0.3s; /* giữ lại một chút khi rời chuột */
-  }
+.dropdown-item {
+  text-transform: capitalize;
+  font-weight: 500;
+}
 
-  /* Khi hover vào menu cha -> hiển thị menu con */
-  .nav-item:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%, 0); /* trượt lên vị trí ban đầu */
-    transition-delay: 0s; /* xuất hiện ngay */
-  }
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #c27c2c;
+}
 
-  .dropdown-menu li {
-    list-style: none;
-    text-align: center;
-  }
+/* ===== Menu link ===== */
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #222;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
 
-  .dropdown-menu a {
-    display: block;
-    padding: 8px 16px;
-    color: #333;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
+.nav-link:hover,
+/* .nav-link:focus {
+  color: #c27c2c;
+  border-bottom: 2px solid #c27c2c;
+} */
 
-  .dropdown-menu a:hover {
-    background-color: #f5f5f5;
-    color: #c47b3a;
-  }
+/* Select “Giá” */
+.form-select {
+  font-weight: 600;
+  text-transform: uppercase;
+  width: auto;
+  min-width: 90px;
+  cursor: pointer;
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
 
-  /* --- Select filter --- */
-  .filter-categories {
-    background-color: transparent;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .filter-categories:focus {
-    outline: none;
-    box-shadow: none; /* tắt viền xanh khi click */
-  }
+  
