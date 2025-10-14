@@ -1312,5 +1312,28 @@ input[name="slide"] {
 .btn-print:hover {
   background: #f1f1f1;
 }
+.product-image-container {
+  /* 1. Đặt ảnh đồi chè làm NỀN cho khối div */
+  background-image: url('images/background-greenhill.jpg');
+  background-size: cover;
+  background-position: center;
 
+  /* 2. Dùng Flexbox để CĂN GIỮA ảnh cốc trà ở bên trong */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  /* 3. Thiết lập kích thước cho khối ảnh */
+  height: 370px; /* Bạn có thể thay đổi chiều cao này cho phù hợp */
+  width: 100%;   /* Nó sẽ chiếm hết chiều rộng của cột chứa nó */
+  
+  /* Đảm bảo ảnh bên trong không tràn ra khỏi góc bo tròn */
+  overflow: hidden; 
+}
+
+.product-drink-photo {
+  /* 4. Điều chỉnh kích thước của ảnh cốc trà */
+  /* Ở đây, nó sẽ chiếm khoảng 60% chiều rộng của khối nền */
+  max-width: 60%; 
+  height: 300px; /* Giữ đúng tỷ lệ của ảnh gốc */
+}
