@@ -291,8 +291,9 @@ body {
 }
 /* Box chỉnh sửa sản phẩm */
 .edit-box {
+  /* padding-top: 150px; */
   position: absolute;
-  top: 55%;  
+  top: 80%;  
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
@@ -303,7 +304,6 @@ body {
   width: 400px;
   text-align: left;
 }
-
 .edit-box h2 {
   text-align: center;
   margin-bottom: 20px;
@@ -317,6 +317,52 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
 }
+
+.edit-box-customer {
+  /* padding-top: 150px; */
+  position: absolute;
+  top: 60%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  height: 450px;
+  width: 400px;
+  text-align: left;
+}
+.edit-box-customer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-box-customer input,
+.edit-box-customer textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+
+.edit-box-customer button {
+  width: 100%;
+  padding: 10px;
+  background: #d4a373;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-box-customer button:hover {
+  background: #b07a50;
+}
+
+
 input[type="file"] {
   display: none; /* Ẩn input mặc định */
 }
