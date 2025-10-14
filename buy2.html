@@ -73,16 +73,11 @@
         </symbol>
       </defs>
     </svg>
+</div>
     <header>
-       <!-- Nút quay lại -->
-        <a href="index2.html" class="position-absolute top-0 start-0 m-3">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
-             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L3.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-        </svg>
-        </a>
       <div class="container-fluid"  style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
        <div class="container-fluid">
-        <div class="row py-3" >
+        <div class="row py-3 " >
           <div class="col-sm-3 col-lg-2 text-center text-sm-start">
             <div class="main-logo">
               <a href="index2.html">
@@ -92,11 +87,10 @@
           </div>
           
           <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-6 d-none d-lg-block">
-            
               </div>
           <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
                <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-3 align-items-center mt-4 mt-sm-0">
- <!-- Nút Văn A / Đăng xuất -->
+  <!-- Nút Văn A / Đăng xuất -->
 <div class="user-menu">
   <div class="user-section">
     <a href="#" class="username">
@@ -117,78 +111,86 @@
   <a href="index.html" class="logout-btn">Đăng xuất</a>
 </div>
   <!-- Icon Cart -->
-  <a href="cart.html" class="rounded-circle bg-light p-2">
+   <a href="cart2.html" class="rounded-circle bg-light p-2">
     <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
   </a>
 </div>
   </header>
-    <div class="container my-4">
-  <h3 class="mb-4">Đơn hàng</h3>
+<div class="container my-5">
 
-  <table class="table table-bordered align-middle text-center bg-light shadow-sm">
-    <thead style="background-color: orange; color: white;">
-      <tr>
-        <th>Mã đơn hàng</th>
-        <th>Ngày đặt</th>
-        <th>Tình trạng thanh toán</th>
-        <th>Tổng tiền</th>
-        <th>Thao tác</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Đơn hàng 1 -->
-      <tr>
-        <td><b>#DH001</b></td>
-        <td>01/10/2025 - 14:35</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>98.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
+  <!-- Danh sách sản phẩm -->
+  <h3 class="text-center mb-4">Sản Phẩm</h3>
 
-      <!-- Đơn hàng 2 -->
-      <tr>
-        <td><b>#DH002</b></td>
-        <td>02/10/2025 - 09:10</td>
-        <td><span class="badge bg-danger">Chưa thanh toán</span></td>
-        <td><b>49.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
+  <!-- Sản phẩm 3 -->
+  <div class="cart-item d-flex align-items-center justify-content-between p-3 mb-3 border rounded bg-light">
+    <img src="images/anh12.jpg.png" class="product-img me-3" style="width:80px; height:auto;">
+    <div class="flex-grow-1">
+      <h5 class="mb-1">Cà phê đen</h5>
+      <span class="text-muted">Phân loại: Cà phê</span>
+    </div>
+    <div class="quantity text-center">
+      <label for="qty3" class="me-2">SL:</label>
+      <input type="number" id="qty3" value="1" min="1" step="1" style="width:60px; text-align:center;">
+    </div>
+    <span class="product-price fw-bold">49.000đ</span>
+  </div>
 
-      <!-- Đơn hàng 3 -->
-      <tr>
-        <td><b>#DH003</b></td>
-        <td>03/10/2025 - 06:10</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>147.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
-      <!-- Đơn hàng 4 -->
-      <tr>
-        <td><b>#DH004</b></td>
-        <td>04/10/2025 - 16:10</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>294.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
-      <!-- Đơn hàng 5 -->
-      <tr>
-        <td><b>#DH005</b></td>
-        <td>05/10/2025 - 13:00</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>245.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Tổng tiền -->
+  <div class="text-end mt-3 mb-5">
+    <h5><strong>Tổng cộng:</strong> 49.000đ</h5>
+  </div>
+
+  <!-- Thông tin người mua -->
+  <h4 class="mb-4">Thông tin người mua</h4>
+
+  <div class="form-group mb-3">
+    <label for="username">Họ và Tên</label>
+    <input type="text" id="username" class="form-control"
+           value="Nguyễn Văn A" placeholder="Nhập họ tên"
+           pattern="[A-Za-zÀ-ỹ\s]+" title="Chỉ nhập chữ cái">
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="phone">Số điện thoại</label>
+    <input type="tel" id="phone" class="form-control"
+           value="0909123456" placeholder="Nhập số điện thoại"
+           maxlength="10" pattern="[0-9]{10}" title="Nhập 10 số">
+  </div> 
+
+  <div class="form-group mb-4">
+    <label for="address">Địa chỉ</label>
+    <input type="text" id="address" class="form-control"
+           value="Đường B, Phường C, TP Hồ Chí Minh" placeholder="Nhập địa chỉ">
+  </div>
+
+  <!-- Phương thức thanh toán -->
+<div class="form-group mb-4">
+  <label for="payment" class="form-label mb-2">Phương thức thanh toán</label><br>
+
+  <div class="payment-options d-flex gap-3">
+    <input type="radio" id="cash" name="payment" checked>
+    <label for="cash" class="payment-btn">💵 Tiền mặt</label>
+
+    <input type="radio" id="transfer" name="payment">
+    <label for="transfer" class="payment-btn">🏦 Chuyển khoản</label>
+  </div>
 </div>
+  <!-- Nút xác nhận -->
+  <div class="text-center">
+    <a href="index2.html" class="btn btn-primary btn-lg">Thanh toán</a>
+  </div>
+
+</div>
+</div>
+    <div id="footer-bottom" >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 copyright">
+            <p>©2025_coffeeshop.created by 4TL.</p>
+          </div>
+          <div class="col-md-6 credit-link text-start text-md-end">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FoodMart - Free eCommerce Grocery Store HTML Website Template</title>
+    <title>COFFEESHOP - 4TL</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,8 +73,8 @@
         </symbol>
       </defs>
     </svg>
-    <header>
-       <!-- Nút quay lại -->
+   <header>
+    <!-- Nút quay lại -->
         <a href="index2.html" class="position-absolute top-0 start-0 m-3">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H3.707l3.147 3.146a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708.708L3.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
@@ -87,108 +87,85 @@
             <div class="main-logo">
               <a href="index2.html">
                 <img src="images/logo2.png" alt="logo" class="img-fluid">
-              </a>
+              </a>   
             </div>
           </div>
-          
           <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-6 d-none d-lg-block">
-            
               </div>
           <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-5 align-items-center mt-4 mt-sm-0 justify-content-center justify-content-sm-end">
                <div class="col-sm-8 col-lg-4 d-flex justify-content-end gap-3 align-items-center mt-4 mt-sm-0">
- <!-- Nút Văn A / Đăng xuất -->
-<div class="user-menu">
-  <div class="user-section">
-    <a href="#" class="username">
-      Văn A
-      <span class="arrow">▼</span>
-    </a>
-    <div class="user-info">
-      <div style="text-align: left;">
-  <p><strong>Tên:</strong> Văn A</p>
-  <p><strong>Email:</strong> vana@example.com</p>
-  <p><strong>SĐT:</strong> 0909 123 456</p>
-  <p><strong>Địa chỉ:</strong> Đường B, Phường C, Thành phố Hồ Chí Minh</p>
-    </div>
-  <!-- Nút chỉnh sửa -->
-  <a href="edit.html" class="edit-btn">Chỉnh sửa</a>
-     </div>
-  </div>
-  <a href="index.html" class="logout-btn">Đăng xuất</a>
-</div>
   <!-- Icon Cart -->
   <a href="cart.html" class="rounded-circle bg-light p-2">
     <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
   </a>
+  <a href="history.html" class="rounded-circle bg-light p-2">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M13 3a9 9 0 0 0-9 9H2l3.89 3.89.07.14L10 12H7a7 7 0 1 1 7 7 7 7 0 0 1-7-7H5a9 9 0 1 0 8-9zm-1 5v5l4.25 2.52.75-1.23-3.5-2.08V8H12z"/>
+  </svg>
+</a>
 </div>
   </header>
-    <div class="container my-4">
-  <h3 class="mb-4">Đơn hàng</h3>
+<section class="edit-profile-section py-5">
+  <div class="container d-flex justify-content-center">
+    <div class="edit-card shadow-sm">
+      <h3 class="text-center mb-4">Chỉnh sửa thông tin cá nhân</h3>
 
-  <table class="table table-bordered align-middle text-center bg-light shadow-sm">
-    <thead style="background-color: orange; color: white;">
-      <tr>
-        <th>Mã đơn hàng</th>
-        <th>Ngày đặt</th>
-        <th>Tình trạng thanh toán</th>
-        <th>Tổng tiền</th>
-        <th>Thao tác</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Đơn hàng 1 -->
-      <tr>
-        <td><b>#DH001</b></td>
-        <td>01/10/2025 - 14:35</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>98.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
+      <form action="index2.html" method="get">
+        <!-- Họ và Tên -->
+        <div class="form-group">
+          <label for="username">Họ và Tên</label>
+          <input type="text" id="username" class="form-control" 
+                 value="Nguyễn Văn A" placeholder="Nhập họ tên"
+                 pattern="[A-Za-zÀ-ỹ\s]+" title="Chỉ nhập chữ cái">
+        </div>
 
-      <!-- Đơn hàng 2 -->
-      <tr>
-        <td><b>#DH002</b></td>
-        <td>02/10/2025 - 09:10</td>
-        <td><span class="badge bg-danger">Chưa thanh toán</span></td>
-        <td><b>49.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
+        <!-- Số điện thoại -->
+        <div class="form-group">
+          <label for="phone">Số điện thoại</label>
+          <input type="tel" id="phone" class="form-control"
+                 value="0909123456" placeholder="Nhập số điện thoại"
+                 maxlength="10" pattern="[0-9]{10}" title="Nhập 10 số">
+        </div>
 
-      <!-- Đơn hàng 3 -->
-      <tr>
-        <td><b>#DH003</b></td>
-        <td>03/10/2025 - 06:10</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>147.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
-      <!-- Đơn hàng 4 -->
-      <tr>
-        <td><b>#DH004</b></td>
-        <td>04/10/2025 - 16:10</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>294.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
-      <!-- Đơn hàng 5 -->
-      <tr>
-        <td><b>#DH005</b></td>
-        <td>05/10/2025 - 13:00</td>
-        <td><span class="badge bg-success">Đã thanh toán</span></td>
-        <td><b>245.000đ</b></td>
-        <td>
-          <a href="detail.html" class="btn btn-dark btn-detail">Xem chi tiết</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-  </body>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="gmail">Email</label>
+          <input type="email" id="gmail" class="form-control"
+                 value="vana@example.com" placeholder="Nhập email">
+        </div>
+
+        <!-- Địa chỉ -->
+        <div class="form-group">
+          <label for="address">Địa chỉ</label>
+          <input type="text" id="address" class="form-control"
+                 value="Đường B, Phường C, TP Hồ Chí Minh" placeholder="Nhập địa chỉ">
+        </div>
+
+        <!-- Mật khẩu mới -->
+        <div class="form-group">
+          <label for="password">Mật khẩu mới</label>
+          <input type="password" id="password" class="form-control" 
+                 placeholder="Nhập mật khẩu mới (nếu đổi)">
+        </div>
+
+        <!-- Nút xác nhận -->
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-confirm">Xác nhận</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<div id="footer-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 copyright">
+            <p>©2025_coffeeshop.created by 4TL.</p>
+          </div>
+          <div class="col-md-6 credit-link text-start text-md-end">
+            <!-- <p>Free HTML Template by <a href="https://templatesjungle.com/">TemplatesJungle</a> Distributed by <a href="https://themewagon">ThemeWagon</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
