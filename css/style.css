@@ -448,7 +448,7 @@ label {
 }
 
 select, input[type="date"] {
-  width: 200px;         /* chỉnh độ rộng */
+  width: 165px;         /* chỉnh độ rộng */
   padding: 5px;
   margin-top: 5px;      /* cách label một khoảng nhỏ */
   border-radius: 5px;

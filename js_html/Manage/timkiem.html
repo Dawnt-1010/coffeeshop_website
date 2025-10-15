@@ -75,9 +75,17 @@
 
       <!-- Bảng quản lý -->
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 1</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đang giao</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Nguyễn Văn A</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây chuối</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
               <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
@@ -86,9 +94,17 @@
           </div>
 
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 2</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đang giao</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Lê Thị B</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây ổi</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
               <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
@@ -97,16 +113,31 @@
           </div>
 
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 3</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đang giao</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Nguyễn Thành C</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây xoài</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
               <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>
-
+          <div class="pagination">
+            <a href="#" class="prev">&lt;</a>
+            <a href="../Manage/timkiem.html" class="active">1</a>
+            <a href="../Manage/timkiem.html">2</a>
+            <a href="../Manage/timkiem.html">3</a>
+            <a href="../Manage/timkiem.html">4</a>
+            <a href="#" class="next">&gt;</a>
+          </div>
         </div>
        </section>
   </body>

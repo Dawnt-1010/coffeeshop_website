@@ -60,7 +60,7 @@
           <input type="date" class="date-input">
 
         <select class="filter-select">
-          <option value="">--Tình trạng đơn hàng--</option>
+          <option value="">Tình trạng đơn hàng</option>
           <option value="dang-giao">Đang giao</option>
           <option value="chua-giao">Chưa giao</option>
           <option value="da-nhan">Đã nhận</option>
@@ -72,9 +72,17 @@
         </div>
       <!-- Bảng quản lý -->
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 1</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Nguyễn Văn A</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây chuối</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
               <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
@@ -83,9 +91,17 @@
           </div>
 
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 2</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đang giao</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Lê Thị B</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây ổi</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
               <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
@@ -94,9 +110,17 @@
           </div>
 
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 3</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đã nhận</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Nguyễn Thành C</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây xoài</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
               <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
@@ -105,35 +129,71 @@
           </div>
 
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 4</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Chưa giao</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Lê Thanh D</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây cam</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
-            <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
+              <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>
           
           <div class="product-card">
-          <div class="col"><span class="label">Quản lý đơn hàng</span><span class="value">Đơn 5</span></div>
-          <div class="col"><span class="label">Kho</span><span class="value">Còn hàng</span></div>
-          <div class="col"><span class="label">Tình Trạng</span><span class="value">Đang giao</span></div>
+          <div class="col"><span class="label">Tên khách hàng</span><span class="value">Thái Văn E</span></div>
+          <div class="col"><span class="label">Địa chỉ giao hàng</span><span class="value">123 cây me</span></div>
+          <div class="col">
+             <span class="label">Tình Trạng</span>
+             <select class="status-select">
+             <option value="da-nhan" selected>Đã nhận</option>
+             <option value="dang-giao">Đang giao</option>
+             <option value="chua-giao">Chưa giao</option>
+             <option value="huy">Đã hủy</option>
+             </select>
+          </div>
           <div class="col"><span class="label">Ngày</span><span class="value">21/1/2025</span></div>
           <div class="actions">
-            <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
+              <button class="view" onclick="window.location.href='view.html'">Xem chi tiết</button>
               
           </div>
           </div>
           <div class="pagination">
             <a href="#" class="prev">&lt;</a>
-            <a href="C:\Users\hauth\OneDrive\Documents\GitHub\coffeeshop_website\js_html\Manage\Mangage.html" class="active">1</a>
-            <a href="C:\Users\hauth\OneDrive\Documents\GitHub\coffeeshop_website\js_html\Manage\Mangage.html">2</a>
-            <a href="C:\Users\hauth\OneDrive\Documents\GitHub\coffeeshop_website\js_html\Manage\Mangage.html">3</a>
-            <a href="C:\Users\hauth\OneDrive\Documents\GitHub\coffeeshop_website\js_html\Manage\Mangage.html">4</a>
+            <a href="../Manage/Mangage.html" class="active">1</a>
+            <a href="../Manage/Mangage.html">2</a>
+            <a href="../Manage/Mangage.html">3</a>
+            <a href="../Manage/Mangage.html">4</a>
             <a href="#" class="next">&gt;</a>
           </div>
         </div>
        </section>
+       <script>
+// Khi đổi trạng thái thì lưu lại
+document.querySelectorAll('.status-select').forEach((select, index) => {
+  // Gán ID riêng để lưu cho từng đơn hàng
+  const orderKey = "orderStatus_" + index;
+
+  // Nếu đã lưu trạng thái trước đó thì set lại khi load trang
+  const savedStatus = localStorage.getItem(orderKey);
+  if (savedStatus) {
+    select.value = savedStatus;
+  }
+
+  // Lắng nghe sự kiện thay đổi và lưu lại
+  select.addEventListener('change', function () {
+    localStorage.setItem(orderKey, this.value);
+    console.log("Đã lưu: ", orderKey, this.value); // debug — có thể bỏ
+  });
+});
+</script>
+
   </body>
 </html>
