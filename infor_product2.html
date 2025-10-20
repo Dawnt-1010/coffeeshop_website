@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   </head>
-  <body style="background-image: url('images/background-cafe.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+  <body style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
 
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <defs>
@@ -73,49 +73,56 @@
         </symbol>
       </defs>
     </svg>
-  <header >
-  <div class="container-fluid" >
-    <div class="container-fluid">
-      <!-- Hàng 1: Logo + Thanh tìm kiếm + Icon -->
-      <div class="row py-3 border-bottom align-items-center">
-        <!-- Logo -->
-        <div class="col-12 col-lg-2 text-center text-lg-start mb-3 mb-lg-0">
-          <a href="index.html">
-            <img src="images/logo2.png" alt="logo" class="img-fluid">
-          </a>
-        </div>
-
-        <!-- Thanh tìm kiếm + icon cùng hàng -->
-        <div class="col-12 col-lg-10">
-          <div class="d-flex align-items-center justify-content-between">
-            <!-- Thanh tìm kiếm -->
-            <div class="search-bar flex-grow-1 bg-light p-2 border border-dark rounded-4 me-3">
-              <form id="search-form" class="d-flex align-items-center" action="index.html" method="post">
-                <input type="text" class="form-control border-0 bg-transparent" placeholder="Tìm Thử Coiiiii" />
-                <button type="submit" class="btn border-0 bg-transparent">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-                  </svg>
-                </button>
-              </form>
-            </div>
-
-            <!-- Icon user + cart -->
-            <div class="d-flex align-items-center gap-3">
-              <a href="user.html" class="rounded-circle bg-light p-2 d-flex align-items-center justify-content-center shadow-sm">
-                <svg width="22" height="22" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
-              </a>
-              <a href="cart.html" class="rounded-circle bg-light p-2 d-flex align-items-center justify-content-center shadow-sm">
-                <svg width="22" height="22" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
-              </a>
-            </div>
-          </div>
-        </div>
+  <header style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
+ <div class="container-fluid" >
+  <div class="container-fluid">
+    <!-- Hàng 1: Logo + Thanh tìm kiếm + Icon -->
+    <div class="row py-3 border-bottom align-items-center">
+      
+      <!-- Logo -->
+      <div class="col-12 col-lg-2 text-center text-lg-start mb-3 mb-lg-0">
+        <a href="index.html">
+          <img src="images/logo2.png" alt="logo" class="img-fluid">
+        </a>
       </div>
 
-     
+      <!-- Thanh tìm kiếm + icon cùng hàng -->
+      <div class="col-12 col-lg-10">
+        <div class="d-flex align-items-center">
+          
+          <!-- Thanh tìm kiếm -->
+          <div class="search-bar flex-grow-1 bg-light p-2 border border-dark rounded-4 me-3">
+            <form id="search-form" class="d-flex align-items-center" action="index.html" method="post">
+              <input type="text" class="form-control border-0 bg-transparent" placeholder="Tìm Thử Coiiiii" />
+              <button type="submit" class="btn border-0 bg-transparent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Icon user + cart -->
+          <div class="d-flex align-items-center gap-3 ms-auto pe-3">
+            <a href="user.html" class="rounded-circle bg-light p-2 d-flex align-items-center justify-content-center shadow-sm">
+              <svg width="22" height="22" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
+            </a>
+            <a href="user.html" class="rounded-circle bg-light p-2 d-flex align-items-center justify-content-center shadow-sm">
+              <svg width="22" height="22" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
+            </a>
+            <a href="user.html" class="rounded-circle bg-light p-2">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M13 3a9 9 0 0 0-9 9H2l3.89 3.89.07.14L10 12H7a7 7 0 1 1 7 7 7 7 0 0 1-7-7H5a9 9 0 1 0 8-9zm-1 5v5l4.25 2.52.75-1.23-3.5-2.08V8H12z"/>
+  </svg>
+</a>
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
+</div>
+
 <div class="container-fluid" >
   <div class="row py-3">
     <div class="col-12">
@@ -128,16 +135,7 @@
         <!-- TRÀ SỮA -->
             <a href="TRASUA1.html" class="nav-link fw-semibold text-dark text-uppercase">Trà Sữa</a>
 
-        <!-- BÁN CHẠY -->
-          <a href="BANCHAY1.html" class="nav-link fw-semibold text-dark text-uppercase">Bán Chạy</a>
-        <!-- GIÁ -->
-        <li class="nav-item">
-          <select class="form-select border-0 bg-transparent fw-semibold text-dark">
-            <option selected>Giá</option>
-            <option>Cao → Thấp</option>
-            <option>Thấp → Cao</option>
-          </select>
-        </li>
+       
 
       </ul>
     </div>
@@ -145,20 +143,110 @@
 </div>
 
 
+
+
 </header>
+
+   <section class="py-5" >     
+  <div class="container">
+    
+    <!-- Breadcrumb -->
+    <nav class="mb-4">
+      <a href="index.html" class="text-success text-decoration-none">Trang chủ</a> 
+      <span class="mx-2">/</span>
+      <a href="infor_product2.html" class="text-muted text-decoration-none">Sản phẩm</a>
+    </nav>
+
+    <div class="row g-5 align-items-start">
+      
+      <!-- Hình ảnh + mô tả -->
+      <div class="col-lg-8">
+        <div class="product-image-container rounded shadow-sm">
+          <img src="images/anh1.jpg.png" title="Hồng Trà Đào" alt="Hồng Trà Đào" class="product-drink-photo">
+        </div>
+        <div class="product-note mt-3 p-3 bg-light rounded">
+          <h6 class="fw-bold" style="text-align: center;">Thông tin sản phẩm</h6>
+          <p class="mb-2">Hồng Trà Đào được pha chế từ hồng trà đậm vị kết hợp với miếng đào ngọt thanh, mang đến hương vị tươi mát, sảng khoái. Thích hợp uống giải khát mọi lúc trong ngày.</p>
+          <ul class="mb-0">
+            <em>Thương hiệu: 4TL - <b>FOUR TALENT'S LEGEND</b></em>
+            <!-- <em>Giá: 49.000đ</em> -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tùy chọn sản phẩm -->
+      <div class="col-lg-4">
+        <h3 class="fw-bold mb-1">Hồng Trà Đào </h3>
+        <p class="text-muted">PB: 3124411</p>
+        <p class="text-muted">Loại: Trà</p>
+        <h4 class="text-success fw-bold mb-4">49.000 đ</h4>
+
+        <div class="mb-3">
+        <label class="fw-semibold">Ngọt</label>
+        <div class="d-flex gap-2">
+            <input type="radio" class="btn-check" name="ngot" id="ngot-it" autocomplete="off">
+            <label class="btn btn-outline-success" for="ngot-it">Ít</label>
+
+            <input type="radio" class="btn-check" name="ngot" id="ngot-binhthuong" autocomplete="off" >
+            <label class="btn btn-outline-success" for="ngot-binhthuong">Bình thường</label>
+
+            <input type="radio" class="btn-check" name="ngot" id="ngot-nhieu" autocomplete="off">
+            <label class="btn btn-outline-success" for="ngot-nhieu">Nhiều</label>
+        </div>
+        </div>
+       
+        <div class="mb-3">
+        <label class="fw-semibold">Trà</label>
+        <div class="d-flex gap-2">
+            <input type="radio" class="btn-check" name="tra" id="tra-it" autocomplete="off">
+            <label class="btn btn-outline-success" for="tra-it">Ít</label>
+
+            <input type="radio" class="btn-check" name="tra" id="tra-binhthuong" autocomplete="off" >
+            <label class="btn btn-outline-success" for="tra-binhthuong">Bình thường</label>
+
+            <input type="radio" class="btn-check" name="tra" id="tra-nhieu" autocomplete="off">
+            <label class="btn btn-outline-success" for="tra-nhieu">Nhiều</label>
+        </div>
+        </div>
+       
+        <div class="mb-3">
+        <label class="fw-semibold">Đá</label>
+        <div class="d-flex gap-2">
+            <input type="radio" class="btn-check" name="da" id="da-it" autocomplete="off">
+            <label class="btn btn-outline-success" for="da-it">Ít</label>
+
+            <input type="radio" class="btn-check" name="da" id="da-binhthuong" autocomplete="off" >
+            <label class="btn btn-outline-success" for="da-binhthuong">Bình thường</label>
+
+            <input type="radio" class="btn-check" name="da" id="da-nhieu" autocomplete="off">
+            <label class="btn btn-outline-success" for="da-nhieu">Nhiều</label>
+        </div>
+        </div>
+
+        <div class="mb-4 d-flex align-items-center gap-2">
+          <button class="btn btn-success">-</button>
+          <span>1</span>
+          <button class="btn btn-success">+</button>
+        </div>
+
+        <button class="btn btn-success w-100 py-2 fw-bold" onclick="window.location.href='user.html'" >
+                    🛒 MUA VỘI     
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <section class="py-5"  >
       <div class="container-fluid">
+        
         <div class="row">
           <div class="col-md-12">
 
             <div class="bootstrap-tabs product-tabs">
               <div class="tabs-header d-flex justify-content-between border-bottom my-5">
-                <h2>Bán Xong Chạy</h2>
-                <nav>
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a href="HOT"></a>
-                  </div>
-                </nav>
+                <h3>SẢN PHẨM TƯƠNG TỰ</h3>
               </div>
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
@@ -168,9 +256,9 @@
                     <div class="col">
                       <div class="product-item">
                         <span class="badge bg-success position-absolute m-3">-30%</span>
-                        <a href="infor_product.html" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
+                        <a href="user.html" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="user.html" title="Hồng Trà Đào">
+                          <a href="infor_product2.html" title="Hồng Trà Đào">
                             <img src="images/anh1.jpg.png"  class="tab-image">
                           </a>
                         </figure>
@@ -201,7 +289,7 @@
                         <span class="badge bg-success position-absolute m-3">-30%</span>
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="user.html" title="Trà Vải Lài">
+                          <a href="infor_product2.html" title="Trà Vải Lài">
                             <img src="images/anh2.jpg.png"  class="tab-image">
                           </a>
                         </figure>
@@ -231,7 +319,7 @@
                       <div class="product-item">
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="user.html" title="Trà Ô Long Dâu">
+                          <a href="infor_product2.html" title="Trà Ô Long Dâu">
                             <img src="images/anh3.jpg.png"  class="tab-image">
                           </a>
                         </figure>
@@ -261,11 +349,11 @@
                       <div class="product-item">
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="user.html" title="Trà Lựu Đỏ">
-                            <img src="images/anh6.jpg.png"  class="tab-image">
+                          <a href="infor_product2.html" title="Trà Sữa Ô Long">
+                            <img src="images/anh4.jpg.png"  class="tab-image">
                           </a>
                         </figure>
-                        <h3>Trà Lựu Đỏ</h3>
+                        <h3>Trà Sữa Ô Long</h3>
                         <span class="qty">Đánh Giá</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
                         <span class="price">49.000đ</span>
                         <div class="d-flex align-items-center justify-content-between">
@@ -291,11 +379,11 @@
                       <div class="product-item">
                         <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                         <figure>
-                          <a href="user.html" title="Trà Ô Long Dâu">
-                            <img src="images/anh3.jpg.png"  class="tab-image">
+                          <a href="infor_product2.html" title="Trà Sữa Truyền Thống">
+                            <img src="images/anh5.jpg.png"  class="tab-image">
                           </a>
                         </figure>
-                        <h3>Trà Ô Long Dâu</h3>
+                        <h3>Trà Sữa Truyền Thống</h3>
                         <span class="qty">Đánh Giá</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
                         <span class="price">49.000đ</span>
                         <div class="d-flex align-items-center justify-content-between">
@@ -316,175 +404,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="user.html" title="Trà Lựu Đỏ">
-                            <img src="images/anh6.jpg.png"  class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Trà Lựu Đỏ</h3>
-                        <span class="qty">Đánh Giá</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">49.000đ</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="input-group product-qty">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
-                                    <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                  </button>
-                              </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
-                                      <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                  </button>
-                              </span>
-                          </div>
-                          <a href="user.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="user.html" title="Trà Ô Long Dâu">
-                            <img src="images/anh3.jpg.png"  class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Trà Ô Long Dâu</h3>
-                        <span class="qty">Đánh Giá</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">49.000đ</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="input-group product-qty">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
-                                    <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                  </button>
-                              </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
-                                      <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                  </button>
-                              </span>
-                          </div>
-                          <a href="user.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
-                        </div>
-                      </div>
-                    </div>
-                   <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="user.html" title="Trà Lựu Đỏ">
-                            <img src="images/anh6.jpg.png"  class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Trà Lựu Đỏ</h3>
-                        <span class="qty">Đánh Giá</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">49.000đ</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="input-group product-qty">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
-                                    <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                  </button>
-                              </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
-                                      <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                  </button>
-                              </span>
-                          </div>
-                          <a href="user.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="user.html" title="Trà Ô Long Dâu">
-                            <img src="images/anh3.jpg.png"  class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Trà Ô Long Dâu</h3>
-                        <span class="qty">Đánh Giá</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">49.000đ</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="input-group product-qty">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
-                                    <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                  </button>
-                              </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
-                                      <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                  </button>
-                              </span>
-                          </div>
-                          <a href="user.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col">
-                      <div class="product-item">
-                        <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
-                        <figure>
-                          <a href="user.html" title="Trà Lựu Đỏ">
-                            <img src="images/anh6.jpg.png"  class="tab-image">
-                          </a>
-                        </figure>
-                        <h3>Trà Lựu Đỏ</h3>
-                        <span class="qty">Đánh Giá</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                        <span class="price">49.000đ</span>
-                        <div class="d-flex align-items-center justify-content-between">
-                          <div class="input-group product-qty">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-left-minus btn btn-danger btn-number" data-type="minus">
-                                    <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
-                                  </button>
-                              </span>
-                              <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1">
-                              <span class="input-group-btn">
-                                  <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus">
-                                      <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
-                                  </button>
-                              </span>
-                          </div>
-                          <a href="user.html" class="btn btn-outline-dark btn-sm text-uppercase fs-6 rounded-1 px-2 py-1 mt-2">MUA NHA</a>
-                        </div>
-                      </div>
-                    </div>
-                      </div>
-                    </div>
-                  </div>   
                 </div>
+                
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </section>
-
-    <div class="pagination">
-  <a href="#" class="prev">&lt;</a>
-  <a href="index.html" class="active">1</a>
-  <a href="index.html">2</a>
-  <a href="index.html">3</a>
-  <a href="index.html">4</a>
-  <a href="#" class="next">&gt;</a>
-  </div>
-
-
     <div id="footer-bottom">
       <div class="container-fluid">
         <div class="row">
@@ -496,6 +424,5 @@
         </div>
       </div>
     </div>
-   
   </body>
 </html>
