@@ -74,7 +74,7 @@
       </defs>
     </svg>
   <header style="background-image: url('images/background-cafe.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
- <div class="container-fluid" >
+ <div class="container-fluid">
   <div class="container-fluid">
     <!-- Hàng 1: Logo + Thanh tìm kiếm + Icon -->
     <div class="row py-3 border-bottom align-items-center">
@@ -89,17 +89,52 @@
       <!-- Thanh tìm kiếm + icon cùng hàng -->
       <div class="col-12 col-lg-10">
         <div class="d-flex align-items-center">
-          
+
           <!-- Thanh tìm kiếm -->
-          <div class="search-bar flex-grow-1 bg-light p-2 border border-dark rounded-4 me-3">
+          <div class="search-bar flex-grow-1 bg-light p-2 border border-dark rounded-4 me-3 position-relative">
             <form id="search-form" class="d-flex align-items-center" action="index.html" method="post">
               <input type="text" class="form-control border-0 bg-transparent" placeholder="Tìm Thử Coiiiii" />
-              <button type="submit" class="btn border-0 bg-transparent">
+              <button type="button" class="btn border-0 bg-transparent" id="toggleAdvanced">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
                 </svg>
               </button>
             </form>
+
+            <!-- Khung tìm kiếm nâng cao -->
+            <div class="advanced-search shadow" id="advancedSearch">
+              <h6 class="fw-bold mb-2">Tìm kiếm nâng cao</h6>
+              <div class="mb-2">
+                <label class="form-label small mb-1">Danh mục</label>
+                <select class="form-select form-select-sm">
+                  <option>Tất cả</option>
+                  <option>Cà phê</option>
+                  <option>Trà sữa</option>
+                  <option>Trà</option>
+                </select>
+              </div>
+              <div class="mb-2">
+                <label class="form-label small mb-1">Giá</label>
+                <select class="form-select form-select-sm">
+                  <option>Tất cả</option>
+                  <option>Dưới 50.000đ</option>
+                  <option>50.000đ - 100.000đ</option>
+                  <option>Trên 100.000đ</option>
+                </select>
+              </div>
+              <div class="mb-2">
+                <label class="form-label small mb-1">Tình trạng</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="new" />
+                  <label class="form-check-label small" for="new">Mới</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="sale" />
+                  <label class="form-check-label small" for="sale">Khuyến mãi</label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm w-100 mt-2">Tìm kiếm</button>
+            </div>
           </div>
 
           <!-- Icon user + cart -->
@@ -111,10 +146,10 @@
               <svg width="22" height="22" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
             </a>
             <a href="user.html" class="rounded-circle bg-light p-2">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M13 3a9 9 0 0 0-9 9H2l3.89 3.89.07.14L10 12H7a7 7 0 1 1 7 7 7 7 0 0 1-7-7H5a9 9 0 1 0 8-9zm-1 5v5l4.25 2.52.75-1.23-3.5-2.08V8H12z"/>
-  </svg>
-</a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M13 3a9 9 0 0 0-9 9H2l3.89 3.89.07.14L10 12H7a7 7 0 1 1 7 7 7 7 0 0 1-7-7H5a9 9 0 1 0 8-9zm-1 5v5l4.25 2.52.75-1.23-3.5-2.08V8H12z"/>
+              </svg>
+            </a>
           </div>
 
         </div>
@@ -590,6 +625,22 @@
         },
       });
     </script>
-    
+    <!--  -->
+      <script>
+const toggleBtn = document.getElementById("toggleAdvanced");
+const advBox = document.getElementById("advancedSearch");
+
+toggleBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  advBox.style.display = advBox.style.display === "block" ? "none" : "block";
+});
+
+// Tự ẩn khi click ra ngoài
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".search-bar")) {
+    advBox.style.display = "none";
+  }
+});
+</script>
   </body>
 </html>
