@@ -1,121 +1,105 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <title>Admin</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="../../css/style.css">
-    </head>
-    <body>
-            <!-- cái sidebar -->
-        <section>
-            <div class="topbar">
-                <a href="../Products/home.html">Trang chủ</a>
-                <a href="../Customers/customers.html">Khách hàng</a>
-                <a href="../Products/products.html">Sản phẩm</a>
-                <a href="../Manage/Mangage.html">Đơn hàng</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Thống kê</button>
-                        <div class="dropdown-content">
-                        <div>
-                        <h4>Top 5 khách hàng</h4>
-                        <p>Danh sách khách hàng mua nhiều nhất.</p>
-                        <a href="../Summary/topcustomers.html">Xem chi tiết</a>
-                        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập kho - Quản trị</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <!-- Thanh topbar -->
+    <section>
+      <div class="topbar">
+        <a href="../Products/home.html">Trang chủ</a>
+        <a href="../Customers/customers.html">Khách hàng</a>
+        <a href="../Products/products.html">Sản phẩm</a>
+        <a href="../Manage/Mangage.html">Đơn hàng</a>
+        <a href="../Summary/arrangehightolow.html" class="active">Nhập kho</a>
+      </div>
 
-                        <div>
-                        <h4>Danh sách đơn hàng</h4>
-                        <p>Xem tất cả các đơn hàng chi tiết.</p>
-                        <a href="../Summary/orders.html">Xem chi tiết</a>
-                        </div>
+      <div class="admin-box">
+        <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo" />
+        <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo" /></a>
+        <h3>Admin/</h3>
+        <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+      </div>
+    </section>
 
-                       
-                    </div>
+    <section class="import-page">
+  <div class="import-container">
+  <h2>Phiếu Nhập Kho</h2>
 
-                </div>
-                
-            </div>
-    
-            </div>
-            <div class="admin-box">
-              <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo">
-              <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo"></a>
-              <h3>Admin/</h3>
-              <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
-            </div>        
-          </section>
+  <div class="import-form-group">
+    <label>Mã phiếu nhập:</label>
+    <input type="text" placeholder="PN001">
+  </div>
 
-          <div>
-                <a href="../Products/home.html"><button class="back-btn">Quay lại</button></a>
-          </div>
-        <section>
-        
-          
-          <div id="customers" class = "content edit-products" align="center">
-            <h2 style="text-align:center;">Danh sách khách hàng mua nhiều nhất</h2>
-            <div class="search-bar">
-              <select>
-                  <option>Lọc theo</option>
-                  <option>Tăng dần</option>
-                  <option>Giảm dần</option>
-              </select>
-                <a href="../Summary/arrangehightolow.html"><button>Lọc</button></a>
-            </div>
-              <div class="success-message">Kết quả chọn lọc</div>
-              <div class="topcustomer-card">
-              <div class="col"><span class="label">Mã KH</span><span class="value">1</span></div>
-              <div class="col"><span class="label">Họ và tên</span><span class="value">Nguyễn Văn A</span></div>
-              <div class="col"><span class="label">SĐT</span><span class="value">012345678</span></div>
-              <div class="col"><span class="label">Tổng tiền</span><span class="value">6,500,000</span></div>
-              </div>
+  <div class="import-form-group">
+    <label>Ngày nhập:</label>
+    <input type="date">
+  </div>
 
-              <div class="topcustomer-card">
-              <div class="col"><span class="label">Mã KH</span><span class="value">3</span></div>
-              <div class="col"><span class="label">Họ và tên</span><span class="value">Nguyễn Thành C</span></div>
-              <div class="col"><span class="label">SĐT</span><span class="value">012345678</span></div>
-              <div class="col"><span class="label">Tổng tiền</span><span class="value">6,000,000</span></div>
-              <div class="actions">
-              </div>
-              </div>
+  <div class="import-form-group">
+    <label>Nhà cung cấp:</label>
+    <input type="text" placeholder="VD: Công ty Cà phê Trung Nguyên">
+  </div>
 
-              <div class="topcustomer-card">
-              <div class="col"><span class="label">Mã KH</span><span class="value">2</span></div>
-              <div class="col"><span class="label">Họ và tên</span><span class="value">Lê Thị B</span></div>
-              <div class="col"><span class="label">SĐT</span><span class="value">012345678</span></div>
-              <div class="col"><span class="label">Tổng tiền</span><span class="value">5,725,000</span></div>
-              <div class="actions">
-              </div>
-              </div>
+  <div class="import-form-group">
+    <label>Nhân viên nhập:</label>
+    <input type="text" placeholder="VD: Nguyễn Văn A">
+  </div>
 
-              <div class="topcustomer-card">
-              <div class="col"><span class="label">Mã KH</span><span class="value">5</span></div>
-              <div class="col"><span class="label">Họ và tên</span><span class="value">Thái Văn E</span></div>
-              <div class="col"><span class="label">SĐT</span><span class="value">012345678</span></div>
-              <div class="col"><span class="label">Tổng tiền</span><span class="value">5,600,000</span></div>
-              <div class="actions"> 
-              </div>
-              </div>
+  <table class="import-table">
+    <thead>
+      <tr>
+        <th>Mã SP</th>
+        <th>Tên sản phẩm</th>
+        <th>Đơn vị</th>
+        <th>Số lượng nhập</th>
+        <th>Đơn giá nhập (VNĐ)</th>
+        <th>Thành tiền</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" placeholder="Thêm mã SP..."></td>
+        <td><input type="text" placeholder="Thêm sản phẩm..."></td>
+        <td><input type="text" placeholder="Kg"></td>
+        <td><input type="number" placeholder="0"></td>
+        <td><input type="text" placeholder="0"></td>
+        <td><input type="text" placeholder="0"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Thêm mã SP..."></td>
+        <td><input type="text" placeholder="Thêm sản phẩm..."></td>
+        <td><input type="text" placeholder="Kg"></td>
+        <td><input type="number" placeholder="0"></td>
+        <td><input type="text" placeholder="0"></td>
+        <td><input type="text" placeholder="0"></td>
+      </tr>
+      <tr>
+        <td><input type="text" placeholder="Thêm mã SP..."></td>
+        <td><input type="text" placeholder="Thêm sản phẩm..."></td>
+        <td><input type="text" placeholder="Kg"></td>
+        <td><input type="number" placeholder="0"></td>
+        <td><input type="text" placeholder="0"></td>
+        <td><input type="text" placeholder="0"></td>
+      </tr>
+    </tbody>
+  </table>
 
-              <div class="topcustomer-card">
-              <div class="col"><span class="label">Mã KH</span><span class="value">4</span></div>
-              <div class="col"><span class="label">Họ và tên</span><span class="value">Lê Thanh D</span></div>
-              <div class="col"><span class="label">SĐT</span><span class="value">012345678</span></div>
-              <div class="col"><span class="label">Tổng tiền</span><span class="value">5,120,000</span></div>
-              <div class="actions">
-              </div>
-              </div>
+  <div class="add-row">
+    <button onclick="window.location.href='addimport.html'">+ Thêm đơn nhập</button>
+  </div>
 
-               <div class="pagination">
-                <a href="#" class="prev">&lt;</a>
-                <a href="../Summary/arrangehightolow.html" class="active">1</a>
-                <a href="../Summary/arrangehightolow.html">2</a>
-                <a href="../Summary/arrangehightolow.html">3</a>
-                <a href="../Summary/arrangehightolow.html">4</a>
-                <a href="#" class="next">&gt;</a>
-              </div>
+  <div class="import-total">
+    Tổng cộng: <span><input type="text" placeholder="0"></span> VNĐ
+  </div>
 
-          </div>
-             
-        </section>
-     
+    <div class="import-actions">
+      <button onclick="if (confirm('Bạn có chắc muốn lưu đơn nhập không?')) {window.location.href='saveimport.html'} else { alert('Hủy lưu!'); }">Lưu phiếu</button>
+    </div>
+  </div>
+</section>
   </body>
-  </html>
+</html>

@@ -874,3 +874,130 @@ button:hover {
 .pagination a.next:hover {
   color: #333;
 }
+/* ======================= */
+/* GIAO DIỆN NHẬP KHO (HTML + CSS TĨNH) */
+/* ======================= */
+.import-container {
+  width: 85%;
+  max-width: 950px;
+  background: rgba(255,255,255,0.95);
+  margin: 180px auto 60px auto;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+.import-container h2 {
+  text-align: center;
+  color: #4b2e05;
+  margin-bottom: 25px;
+}
+
+.import-form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.import-form-group label {
+  width: 160px;
+  font-weight: bold;
+  color: #4b2e05;
+  text-align: right;
+}
+
+.import-form-group input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #d0b89b;
+  border-radius: 8px;
+  background: #fffef9;
+}
+
+.import-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.import-table th {
+  background-color: #f2b84c;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.import-table td {
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.import-table tr:nth-child(even) td {
+  background-color: #faf7f3;
+}
+
+.import-table input {
+  width: 95%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.add-row {
+  text-align: right;
+  margin: 15px 0;
+}
+
+.add-row button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.add-row button:hover {
+  background-color: #3e8e41;
+}
+
+.import-total {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #3f2a14;
+}
+
+.import-actions {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.import-actions button {
+  background-color: #d4a373;
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 8px;
+  transition: 0.2s;
+}
+
+.import-actions button:hover {
+  background-color: #b07a50;
+  transform: translateY(-1px);
+}
