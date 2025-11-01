@@ -8,23 +8,7 @@
                 <a href="../Customers/customers.html">Khách hàng</a>
                 <a href="../Products/products.html">Sản phẩm</a>
                 <a href="../Manage/Mangage.html">Đơn hàng</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Thống kê</button>
-                        <div class="dropdown-content">
-                        <div>
-                        <h4>Top 5 khách hàng</h4>
-                        <p>Danh sách khách hàng mua nhiều nhất.</p>
-                        <a href="../Summary/topcustomers.html">Xem chi tiết</a>
-                        </div>
-
-                        <div>
-                        <h4>Danh sách đơn hàng</h4>
-                        <p>Xem tất cả các đơn hàng chi tiết.</p>
-                        <a href="../Summary/orders.html">Xem chi tiết</a>
-                        </div>
-
-                       
-                    </div>
+                <a href="../Summary/arrangehightolow.html">Nhập kho</a>
 
                 </div>
                 
@@ -59,19 +43,12 @@
 
 
                     <label for="loai">Loại:</label>
-                    <div class="loai-options">
-                    <input type="radio" id="tra" name="loai" value="Trà">
-                    <label for="tra">Trà</label>
-
-                    <input type="radio" id="caphe" name="loai" value="Cà phê">
-                    <label for="caphe">Cà phê</label>
-
-                    <input type="radio" id="sinhto" name="loai" value="Sinh tố">
-                    <label for="sinhto">Sinh tố</label>
-
-                    <input type="radio" id="nuocep" name="loai" value="Nước ép">
-                    <label for="nuocep">Nước ép</label>
-                    </div>
+                    <select class="status-select">
+                    <option value="tra" selected>Trà</option>
+                    <option value="ca-phe">Cà phê</option>
+                    <option value="sinh-to">Sinh tố</option>
+                    <option value="nuoc-ep">Nước ép</option>
+                    </select>
 
 
                     <label for="sale">Khuyến mãi:</label>
