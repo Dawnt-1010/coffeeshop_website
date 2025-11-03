@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập kho - Quản trị</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <!-- Thanh topbar -->
+    <section>
+      <div class="topbar">
+        <a href="../Products/home.html">Trang chủ</a>
+        <a href="../Customers/customers.html">Khách hàng</a>
+        <a href="../Products/products.html">Sản phẩm</a>
+        <a href="../Manage/Mangage.html">Đơn hàng</a>
+        <a href="../Summary/arrangehightolow.html" class="active">Nhập kho</a>
+        <a href="../Summary/thongke.html">Thống kê</a>
+      <div class="dropdown">
+      <div class="dropbtn">Tồn kho ▾</div>
+      <div class="dropdown-content">
+        <a href="../Summary/kiemkho.html">Tra cứu tồn kho</a>
+        <a href="../Summary/canhbao.html">Cảnh báo</a>
+        <a href="../Summary/baocao.html">Báo cáo tồn kho</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="admin-box">
+        <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo" />
+        <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo" /></a>
+        <h3>Admin/</h3>
+        <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+      </div>
+      
+    </section>
+
+    <section class="import-page">
+  <div class="import-container">
+  <h2>Báo cáo tồn kho</h2>
+  <!-- Tab 3 -->
+        <div id="baocao" class="tab-content">
+        <div class="search-container">
+  <div class="search-row">
+        <div class="search-group">
+      <label for="from-date">Từ ngày</label>
+      <input type="date" id="from-date" />
+    </div>
+
+    <div class="search-group">
+      <label for="to-date">Đến ngày</label>
+      <input type="date" id="to-date" />
+    </div>
+    <div class="search-group">
+      <label for="product">Sản phẩm</label>
+      <select id="product">
+        <option>--Tất cả sản phẩm--</option>
+        <option value="tra">Hồng trà đào</option>
+        <option value="tra">Trà vải lài</option>
+        <option value="tra">Trà ô long dâu</option>
+        <option value="trasua">Trà sữa ô long</option>
+        <option value="trasua">Trà sữa truyền thống</option>
+        <option value="tra">Trà lựu đỏ</option>
+        <option value="trasua">Trà kem cheese</option>
+        <option value="caphe">Cà phê kem cheese</option>
+        <option value="caphe">Cà phê muối</option>
+        <option value="caphe">Cà phê sữa</option>
+      </select>
+    </div>
+
+    <div class="search-group">
+      <label for="category">Loại</label>
+      <select id="category">
+        <option>--Tất cả loại</option>
+        <option>Trà</option>
+        <option>Trà sữa</option>
+        <option>Cà phê</option>
+      </select>
+    </div>
+    
+    <div class="search-group search-btn-group">
+    <label style="visibility: hidden;">Tìm kiếm</label>
+    <button onclick="window.location.href='baocao.html'">Tìm kiếm</button>
+  </div>
+  </div>
+
+</div>
+
+          <table>
+            <tr>
+              <th>STT</th>
+              <th>Hình ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Loại</th>
+              <th>Số lượng nhập</th>
+              <th>Số lượng xuất</th>
+              <th>Số lượng tồn</th>
+              <th>Ngày</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td><img src="../../images/anh1.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+              <td>Trà đào</td>
+              <td>Trà</td>
+              <td>40</td>
+              <td>33</td>
+              <td>14</td>
+              <td>4/10/2025</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><img src="../../images/anh5.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+              <td>Trà sữa truyền thống</td>
+              <td>Trà sữa</td>
+              <td>32</td>
+              <td>15</td>
+              <td>8</td>
+              <td>4/10/2025</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><img src="../../images/anh9.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+              <td>Trà sữa ô long</td>
+              <td>Trà sữa</td>
+              <td>30</td>
+              <td>25</td>
+              <td>4</td>
+              <td>6/10/2025</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><img src="../../images/anh13.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+              <td>Cà phê muối</td>
+              <td>Cà phê</td>
+              <td>20</td>
+              <td>5</td>
+              <td>15</td>
+              <td>5/10/2025</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

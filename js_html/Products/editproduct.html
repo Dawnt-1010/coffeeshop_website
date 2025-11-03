@@ -3,18 +3,22 @@
     <body>
             <!-- cái topbar -->
         <section>
-            <div class="topbar">
-                <a href="../Products/home.html">Trang chủ</a>
-                <a href="../Customers/customers.html">Khách hàng</a>
-                <a href="../Products/products.html">Sản phẩm</a>
-                <a href="../Manage/Mangage.html">Đơn hàng</a>
-                <a href="../Summary/arrangehightolow.html">Nhập kho</a>
-
-                </div>
-                
-            </div>
-    
-            </div>
+      <div class="topbar">
+        <a href="../Products/home.html">Trang chủ</a>
+        <a href="../Customers/customers.html">Khách hàng</a>
+        <a href="../Products/products.html">Sản phẩm</a>
+        <a href="../Manage/Mangage.html">Đơn hàng</a>
+        <a href="../Summary/arrangehightolow.html" class="active">Nhập kho</a>
+        <a href="../Summary/thongke.html">Thống kê</a>
+      <div class="dropdown">
+      <div class="dropbtn">Tồn kho ▾</div>
+      <div class="dropdown-content">
+        <a href="../Summary/kiemkho.html">Kiểm kho</a>
+        <a href="../Summary/canhbao.html">Cảnh báo</a>
+        <a href="../Summary/baocao.html">Báo cáo tồn kho</a>
+      </div>
+      </div>
+      </div>
             <div class="admin-box">
               <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo">
               <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo"></a>
@@ -46,8 +50,7 @@
                     <select class="status-select">
                     <option value="tra" selected>Trà</option>
                     <option value="ca-phe">Cà phê</option>
-                    <option value="sinh-to">Sinh tố</option>
-                    <option value="nuoc-ep">Nước ép</option>
+                    <option value="sinh-to">Trà sữa</option>
                     </select>
 
 
@@ -57,7 +60,7 @@
                     <label for="desc">Mô tả:</label>
                     <textarea id="desc" name="desc">Ngon bổ rẻ</textarea>
 
-                    <button>Lưu</button>
+                    <button onclick="if (confirm('Bạn có chắc muốn lưu sản phẩm không?')) {alert('Đã lưu thành công!');} else { alert('Hủy lưu!'); }">Lưu</button>
                 </form>
             </div>
         </section>

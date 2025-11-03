@@ -300,8 +300,8 @@ body {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  height: 750px;
-  width: 400px;
+  height: 800px;
+  width: 700px;
   text-align: left;
 }
 .edit-box h2 {
@@ -325,7 +325,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background: white;
-  padding: 30px;
+  padding: 40px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   height: 450px;
@@ -778,7 +778,7 @@ button:hover {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Tự xuống hàng nếu màn hình nhỏ */
+    flex-wrap: flex-end; /* Tự xuống hàng nếu màn hình nhỏ */
 }
 /* phần chọn loại sản phẩm trong sản phẩm */
 .loai-options {
@@ -1000,4 +1000,308 @@ button:hover {
 .import-actions button:hover {
   background-color: #b07a50;
   transform: translateY(-1px);
+}
+.dashboard {
+  padding: 200px;
+  background: url("../img/bg_coffee.png") no-repeat center/cover;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hàng 1 */
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  flex: 1;
+  background: #fff8ec;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(150, 100, 50, 0.15);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h4 {
+  color: #8b4513;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 22px;
+  color: #5a3e1b;
+  font-weight: bold;
+}
+
+/* Hàng 2 */
+.charts-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.chart-card {
+  flex: 1;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(150, 100, 50, 0.15);
+}
+
+.chart-card h4 {
+  color: #8b4513;
+  margin-bottom: 15px;
+}
+
+/* Hàng 3 */
+.small-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.small-card {
+  flex: 1;
+  background: #fefcf5;
+  border: 1px solid #f1d3a1;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(150, 100, 50, 0.1);
+}
+
+.small-card h4 {
+  font-size: 14px;
+  color: #7b4b1f;
+}
+
+.small-card p {
+  font-weight: bold;
+  color: #5a3e1b;
+  margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .stats-row,
+  .charts-row,
+  .small-stats {
+    flex-direction: column;
+  }
+}
+.top-customers {
+  background: #fffaf3;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 20px 25px;
+  margin: 30px auto;
+  width: 95%;
+}
+
+.top-customers h3 {
+  margin-bottom: 15px;
+  color: #7a4c25;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-left: 4px solid #c49a6c;
+  padding-left: 10px;
+}
+
+.top-customers table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.top-customers th {
+  background-color: #f6e6d0;
+  color: #4a2c10;
+  text-align: left;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.top-customers td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-customers tr:hover {
+  background-color: #f9f3ea;
+}
+/* ======================= */
+/* GỘP THÊM STYLE NHẬP KHO (addimport.css) */
+/* ======================= */
+
+.import-container {
+  width: 85%;
+  max-width: 950px;
+  background: rgba(255,255,255,0.95);
+  margin: 180px auto 60px auto;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  font-family: Arial, sans-serif;
+}
+
+.import-container h2 {
+  text-align: center;
+  color: #4b2e05;
+  margin-bottom: 25px;
+}
+
+.import-form-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.import-form-group label {
+  width: 160px;
+  font-weight: bold;
+  color: #4b2e05;
+  text-align: right;
+}
+
+.import-form-group input {
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #d0b89b;
+  border-radius: 8px;
+  background: #fffef9;
+}
+
+.import-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.import-table th {
+  background-color: #f2b84c;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px;
+}
+
+.import-table td {
+  border: 1px solid #eee;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.import-table tr:nth-child(even) td {
+  background-color: #faf7f3;
+}
+
+.import-table input {
+  width: 95%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.add-row {
+  text-align: right;
+  margin: 15px 0;
+}
+
+.add-row button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.add-row button:hover {
+  background-color: #3e8e41;
+}
+
+.import-total {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #3f2a14;
+}
+
+.import-actions {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.import-actions button {
+  background-color: #d4a373;
+  color: white;
+  border: none;
+  padding: 10px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 8px;
+  transition: 0.2s;
+}
+
+.import-actions button:hover {
+  background-color: #b07a50;
+  transform: translateY(-1px);
+}
+.row-input {
+  display: flex;
+  justify-content: space-between; /* căn 2 ô xa nhau */
+  gap: 20px; /* khoảng cách giữa hai ô */
+}
+
+.row-input .form-group {
+  flex: 1; /* hai ô chia đều độ rộng */
+}
+
+.row-input input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+/* Trạng thái tồn kho */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 2px solid transparent;
+  text-align: center;
+}
+
+/* Bình thường */
+.status.normal {
+  color: #2e7d32; /* xanh lá */
+  border-color: #81c784;
+  background-color: #e8f5e9;
+}
+
+/* Sắp hết hàng */
+.status.warning {
+  color: #f57c00; /* cam */
+  border-color: #ffb74d;
+  background-color: #fff3e0;
 }

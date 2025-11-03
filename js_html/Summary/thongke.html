@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập kho - Quản trị</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <!-- Thanh topbar -->
+    <section>
+      <div class="topbar">
+        <a href="../Products/home.html">Trang chủ</a>
+        <a href="../Customers/customers.html">Khách hàng</a>
+        <a href="../Products/products.html">Sản phẩm</a>
+        <a href="../Manage/Mangage.html">Đơn hàng</a>
+        <a href="../Summary/arrangehightolow.html" class="active">Nhập kho</a>
+        <a href="../Summary/thongke.html">Thống kê</a>
+      <div class="dropdown">
+      <div class="dropbtn">Tồn kho ▾</div>
+      <div class="dropdown-content">
+        <a href="../Summary/kiemkho.html">Kiểm kho</a>
+        <a href="../Summary/canhbao.html">Cảnh báo</a>
+        <a href="../Summary/baocao.html">Báo cáo tồn kho</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="admin-box">
+        <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo" />
+        <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo" /></a>
+        <h3>Admin/</h3>
+        <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+      </div>
+    </section>
+    <main class="dashboard">
+  <!-- Hàng 1: Thống kê nhanh -->
+  <section class="stats-row">
+    <div class="stat-card">
+      <h4>Khách hàng</h4>
+      <p>40</p>
+    </div>
+    <div class="stat-card">
+      <h4>Tổng sản phẩm</h4>
+      <p>120</p>
+    </div>
+    <div class="stat-card">
+      <h4>Đơn hàng</h4>
+      <p>85</p>
+    </div>
+    <div class="stat-card">
+      <h4>Tổng doanh thu</h4>
+      <p>45.375.000 VNĐ</p>
+    </div>
+  </section>
+
+  <!-- Hàng 2: Biểu đồ -->
+  <section class="charts-row">
+    <div class="chart-card">
+      <h4>Một số sản phẩm bán chạy</h4>
+      <canvas id="topProducts"></canvas>
+    </div>
+    <div class="chart-card">
+      <h4>Doanh thu của 4 tháng gần nhất</h4>
+      <canvas id="monthlyRevenue"></canvas>
+    </div>
+  </section>
+
+  <!-- Hàng 3: Thống kê phụ -->
+  <section class="small-stats">
+    <div class="small-card">
+      <h4>Đơn hàng trung bình</h4>
+      <p>559.000 VNĐ</p>
+    </div>
+    <div class="small-card">
+      <h4>Tỷ lệ hoàn hàng</h4>
+      <p>1.4%</p>
+    </div>
+    <div class="small-card">
+      <h4>Khách hàng mới</h4>
+      <p>24</p>
+    </div>
+  </section>
+  <div class="top-customers">
+  <h3>Danh sách 5 khách hàng có mức mua nhiều nhất</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Mã KH</th>
+        <th>Tên khách hàng</th>
+        <th>Số điện thoại</th>
+        <th>Số đơn hàng</th>
+        <th>Tổng chi tiêu (VNĐ)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Nguyễn Văn A</td>
+        <td>012345678</td>
+        <td>20</td>
+        <td>12.500.000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Lê Thị B</td>
+        <td>012345675</td>
+        <td>17</td>
+        <td>10.200.000</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lê Hoàng C</td>
+        <td>012345676</td>
+        <td>15</td>
+        <td>9.850.000</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Phạm Minh D</td>
+        <td>012345679</td>
+        <td>14</td>
+        <td>8.400.000</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Võ Thị E</td>
+        <td>012345677</td>
+        <td>12</td>
+        <td>7.950.000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Biểu đồ sản phẩm
+  const ctx1 = document.getElementById('topProducts');
+  new Chart(ctx1, {
+    type: 'bar',
+    data: {
+      labels: ['Cà phê đen', 'Cà phê sữa', 'Matcha latte', 'Trà đào'],
+      datasets: [{
+        label: 'Số lượng bán',
+        data: [65, 70, 90, 110],
+        backgroundColor: '#c38b4d'
+      }]
+    },
+    options: { responsive: true, plugins: { legend: { display: false } } }
+  });
+
+  // Biểu đồ doanh thu
+  const ctx2 = document.getElementById('monthlyRevenue');
+  new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ['8','9','10','11'],
+      datasets: [{
+        label: 'Doanh thu (triệu VNĐ)',
+        data: [9,11,14,13],
+        borderColor: '#d17a22',
+        backgroundColor: 'rgba(209,122,34,0.2)',
+        fill: true,
+        tension: 0.3
+      }]
+    },
+    options: { responsive: true, plugins: { legend: { display: false } } }
+  });
+</script>
+
+</body>
+</html>

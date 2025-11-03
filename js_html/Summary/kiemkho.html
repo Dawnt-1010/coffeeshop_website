@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập kho - Quản trị</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body>
+    <!-- Thanh topbar -->
+    <section>
+      <div class="topbar">
+        <a href="../Products/home.html">Trang chủ</a>
+        <a href="../Customers/customers.html">Khách hàng</a>
+        <a href="../Products/products.html">Sản phẩm</a>
+        <a href="../Manage/Mangage.html">Đơn hàng</a>
+        <a href="../Summary/arrangehightolow.html" class="active">Nhập kho</a>
+        <a href="../Summary/thongke.html">Thống kê</a>
+      <div class="dropdown">
+      <div class="dropbtn">Tồn kho ▾</div>
+      <div class="dropdown-content">
+        <a href="../Summary/kiemkho.html">Tra cứu tồn kho</a>
+        <a href="../Summary/canhbao.html">Cảnh báo</a>
+        <a href="../Summary/baocao.html">Báo cáo tồn kho</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="admin-box">
+        <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo" />
+        <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo" /></a>
+        <h3>Admin/</h3>
+        <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+      </div>
+      
+    </section>
+
+    <section class="import-page">
+  <div class="import-container">
+  <h2>Tra cứu tồn kho</h2>
+
+        <div id="tracuu" class="tab-content active">
+          <div class="search-row">
+            <div class="search-actions">
+              <select>
+                <option>--Tất cả các loại--</option>
+                <option>Trà</option>
+                <option>Trà sữa</option>
+                <option>Cà phê</option>
+              </select>
+              <input type="text" class="search-input" placeholder="🔍 Tìm sản phẩm..."/>
+              <button onclick="window.location.href='kiemkho.html'">Tìm kiếm</button>
+            </div>
+          </div>
+
+          <table class="import-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Hình ảnh</th>
+                <th>Sản phẩm</th>
+                <th>Loại</th>
+                <th>Số lượng tồn</th>
+                <th>Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><img src="../../images/anh1.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+                <td>Trà đào</td>
+                <td>Trà</td>
+                <td>10</td>
+                <td><span class="status normal">✅ Bình thường</span></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><img src="../../images/anh9.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+                <td>Trà sữa ô long</td>
+                <td>Trà sữa</td>
+                <td>5</td>
+                <td><span class="status warning">⚠️ Sắp hết hàng</span></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><img src="../../images/anh14.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+                <td>Cà phê sữa</td>
+                <td>Cà phê</td>
+                <td>7</td>
+                <td><span class="status normal">✅ Bình thường</span></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><img src="../../images/anh16.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+                <td>Matcha latte</td>
+                <td>Trà sữa</td>
+                <td>3</td>
+                <td><span class="status warning">⚠️ Sắp hết hàng</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+    </section>
+
+  </body>
+</html>
