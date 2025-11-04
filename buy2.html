@@ -99,17 +99,18 @@
     </a>
     <div class="user-info">
       <div style="text-align: left;">
-  <p><strong>Tên:</strong> Văn A</p>
+  <p><strong>Tên:</strong> Nguyễn Văn A</p>
   <p><strong>Email:</strong> vana@example.com</p>
-  <p><strong>SĐT:</strong> 0909 123 456</p>
+  <p><strong>SĐT:</strong> 0909123456</p>
   <p><strong>Địa chỉ:</strong> Đường B, Phường C, Thành phố Hồ Chí Minh</p>
     </div>
   <!-- Nút chỉnh sửa -->
-  <a href="edit.html" class="edit-btn">Chỉnh sửa</a>
+   <div class="user-buttons">
+        <a href="edit.html" class="edit-btn">Chỉnh sửa</a>
+
+        <a href="index.html" class="logout-btn">Đăng xuất</a>
+      </div>
      </div>
-  </div>
-  <a href="index.html" class="logout-btn">Đăng xuất</a>
-</div>
   <!-- Icon Cart -->
    <a href="cart2.html" class="rounded-circle bg-light p-2">
     <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#cart"></use></svg>
@@ -177,7 +178,7 @@
 </div>
   <!-- Nút xác nhận -->
   <div class="text-center">
-    <a href="index2.html" class="btn btn-primary btn-lg">Thanh toán</a>
+    <a onclick="if (confirm('Bạn có chắc muốn thanh toán không?')) {alert('Đã thanh toán thành công!');} else { alert('Hủy thanh toán!'); }" href="buy2.html" class="btn btn-primary btn-lg">Thanh toán</a>
   </div>
 
 </div>
