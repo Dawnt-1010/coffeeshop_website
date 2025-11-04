@@ -16,6 +16,7 @@
         <a href="../Summary/kiemkho.html">Kiểm kho</a>
         <a href="../Summary/canhbao.html">Cảnh báo</a>
         <a href="../Summary/baocao.html">Báo cáo tồn kho</a>
+        <a href="../Summary/giaban.html">Quản lý giá bán</a>
       </div>
       </div>
       </div>
@@ -31,48 +32,64 @@
           </section>
 
    <section>  
-      <div id="customers" class = "content edit-products" align="center">
-        <h2>Chi tiết đơn hàng</h2>
-      <!-- Bảng quản lý -->
-        
-        <div class="container my-4">
+      <div class="order-container">
 
-  <table class="table table-bordered align-middle text-center bg-light">
-    <thead style="background-color: rgb(240, 168, 35); color: white;">
+    <h2>Chi tiết đơn hàng</h2>
+    <div class="order-info">
+
+        <p><strong>Mã đơn hàng:</strong> 1</p>
+        <p><strong>Khách hàng:</strong> Nguyễn Văn A</p>
+        <p><strong>Email:</strong> ngvana@gmail.com</p>
+        <p><strong>Số điện thoại:</strong> 012345678</p>
+        <p><strong>Địa chỉ giao hàng:</strong> 123 cây chuối</p>
+        <p><strong>Thời gian đặt hàng:</strong> 14:50 - 21/1/2025</p>
+
+    </div>
+
+    <table class="import-table">
+    <thead>
       <tr>
+        <th>STT</th>
         <th>Hình ảnh</th>
-        <th>Tên sản phẩm</th>
+        <th>Sản phẩm</th>
         <th>Đơn giá</th>
         <th>Số lượng</th>
         <th>Thành tiền</th>
-        <th>Thời gian</th>
         <th>Trạng thái</th>
       </tr>
     </thead>
     <tbody>
-      <!-- Sản phẩm 1 -->
       <tr>
+        <td>1</td>
         <td><img src="../../images/anh1.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
-        <td>Trà Đào</td>
-        <td>49.000đ</td>
-        <td>1</td>
-        <td><b>49.000đ</b></td>
-        <td>14:35 - 01/10/2025</td>
-        <td><span class="badge bg-success">Đã mua</span></td>
-      </tr>
-      <!-- Sản phẩm 2 -->
+        <td>Trà đào</td>
+        <td>49.000 VNĐ</td>
+        <td>2</td>
+        <td>98.000 VNĐ</td>
+        <td><span class="status normal">✅ Đã mua</span></td>
       <tr>
-        <td><img src="../../images/anh2.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
-        <td>Trà vải</td>
-        <td>49.000đ</td>
-        <td>1</td>
-        <td><b>49.000đ</b></td>
-        <td>09:10 - 02/10/2025</td>
-        <td><span class="badge bg-success">Đã mua</span></td>
+        <td>2</td>
+        <td><img src="../../images/anh9.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+        <td>Trà sữa ô long</td>
+        <td>49.000 VNĐ</td>
+        <td>2</td>
+        <td>98.000 VNĐ</td>
+        <td><span class="status normal">✅ Đã mua</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><img src="../../images/anh14.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+        <td>Cà phê sữa</td>
+        <td>49.000 VNĐ</td>
+        <td>2</td>
+        <td>147.000 VNĐ</td>
+        <td><span class="status normal">✅ Đã mua</span></td>
       </tr>
     </tbody>
   </table>
-        <td><b>Tổng cộng : 98.000đ</b></td>  
+
+    <p class="total">Tổng cộng: <span>343.000</span> VNĐ </p> 
 </div>
+
     </body>
 </html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập kho - Quản trị</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <style>
+      /* ✅ Căn phải các cột có số liệu */
+      .table th:nth-child(3),
+      .table td:nth-child(3),
+      .table th:nth-child(4),
+      .table td:nth-child(4),
+      .table th:nth-child(5),
+      .table td:nth-child(5) {
+        text-align: right;
+      }
+
+      /* Làm nổi bật giá bán và lợi nhuận */
+      .table td:nth-child(4),
+      .table td:nth-child(5) {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Thanh topbar -->
+    <section>
+      <div class="topbar">
+        <a href="../Products/home.html">Trang chủ</a>
+        <a href="../Customers/customers.html">Khách hàng</a>
+        <a href="../Products/products.html">Sản phẩm</a>
+        <a href="../Manage/Mangage.html">Đơn hàng</a>
+        <a href="../Summary/arrangehightolow.html" class="active">Nhập kho</a>
+        <a href="../Summary/thongke.html">Thống kê</a>
+      <div class="dropdown">
+      <div class="dropbtn">Tồn kho ▾</div>
+      <div class="dropdown-content">
+        <a href="../Summary/kiemkho.html">Tra cứu tồn kho</a>
+        <a href="../Summary/canhbao.html">Cảnh báo</a>
+        <a href="../Summary/baocao.html">Báo cáo tồn kho</a>
+        <a href="../Summary/giaban.html">Quản lý giá bán</a>
+      </div>
+      </div>
+      </div>
+
+      <div class="admin-box">
+        <img class="adminlogo" src="../../images/adminicon.png" alt="adminlogo" />
+        <a href="../Products/home.html" class="logo"><img src="../../images/logo2.png" alt="logo" /></a>
+        <h3>Admin/</h3>
+        <a href="../../admin.html"><span class="logout-text">Đăng xuất</span></a>
+      </div>
+      <div>
+                <a href="giaban.html"><button class="back-btn">Quay lại</button></a>
+        </div>
+    </section>
+
+    <section class="import-page">
+  <div class="import-container">
+  <h2>Kết quả tìm kiếm sản phẩm</h2>
+      <h3 style="margin-top: 15px">
+        Tìm thấy 1 sản phẩm trùng khớp với mã sản phẩm
+        <span style="color: rgb(255, 162, 0)">"SP2"</span>
+      </h3>
+
+      <table class="import-table" id="priceTable">
+        <tr>
+          <th>Mã SP</th>
+          <th>Hình ảnh</th>
+          <th>Tên sản phẩm</th>
+          <th>Giá nhập (VNĐ)</th>
+          <th>Giá bán (VNĐ)</th>
+          <th>Lợi nhuận (%)</th>
+          <th>Thao tác</th>
+        </tr>
+        <tr>
+            <td>SP2</td>
+            <td><img src="../../images/anh16.jpg.png" style="width:70px; height:auto;" class="rounded"></td>
+            <td>Matcha Latte</td>
+            <td>35.000</td>
+            <td>49.000</td>
+            <td>22%</td>
+            <td><button class="btn" onclick="openModal(this)">Chỉnh sửa</button></td>
+        </tr>
+      </table>
+    </main>
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <h3>Chỉnh sửa Giá / Lợi nhuận</h3>
+
+        <label><b>Mã sản phẩm:</b></label>
+        <input type="text" id="prodId" readonly />
+
+        <label><b>Giá nhập (VNĐ):</b></label>
+        <input type="text" id="costPrice" />
+
+        <label><b>Giá bán (VNĐ):</b></label>
+        <input type="text" id="sellPrice" oninput="updateMargin()" />
+
+        <label><b>Lợi nhuận (%):</b></label>
+        <input type="number" id="newMargin" oninput="updatePrice()" />
+
+        <div
+          style="
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 10px;
+          "
+        >
+          <button class="btn ghost" onclick="closeModal()">Hủy</button>
+          <button class="btn" onclick="saveModal()">Lưu</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentRow = null;
+
+      function parseNumber(str) {
+    return parseFloat(str.replace(/\./g, "").replace(/[^\d.-]/g, ""));
+}
+
+
+      function openModal(button) {
+        currentRow = button.closest("tr");
+        const cells = currentRow.cells;
+
+        const id = cells[0].innerText;
+        const cost = parseNumber(cells[3].innerText);
+        const sell = parseNumber(cells[4].innerText);
+        const margin = parseFloat(cells[5].innerText);
+
+        document.getElementById("prodId").value = id;
+        document.getElementById("costPrice").value = cost;
+        document.getElementById("sellPrice").value = sell;
+        document.getElementById("newMargin").value = margin;
+
+        document.getElementById("editModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("editModal").style.display = "none";
+      }
+
+      function updateMargin() {
+        const cost = parseFloat(document.getElementById("costPrice").value);
+        const sell = parseFloat(document.getElementById("sellPrice").value);
+        if (!cost || !sell) return;
+        const margin = ((sell - cost) / cost) * 100;
+        document.getElementById("newMargin").value = margin.toFixed(2);
+      }
+
+      function updatePrice() {
+        const cost = parseFloat(document.getElementById("costPrice").value);
+        const margin = parseFloat(document.getElementById("newMargin").value);
+        if (!cost || isNaN(margin)) return;
+        const sell = cost * (1 + margin / 100);
+        document.getElementById("sellPrice").value = sell.toFixed(0);
+      }
+
+      function saveModal() {
+        if (!currentRow) return;
+        const sell = parseFloat(document.getElementById("sellPrice").value);
+        const margin = parseFloat(document.getElementById("newMargin").value);
+
+        currentRow.cells[4].innerHTML =  sell.toLocaleString("vi-VN");
+        currentRow.cells[5].innerHTML = margin.toFixed(2) + "%";
+
+        currentRow.style.transition = "background 0.6s";
+        currentRow.style.background = "#fff3cd";
+        setTimeout(() => (currentRow.style.background = ""), 800);
+
+        closeModal();
+        alert("Đã cập nhật thành công!");
+      }
+
+      window.onclick = function (e) {
+        const modal = document.getElementById("editModal");
+        if (e.target === modal) closeModal();
+      };
+    </script>
+  </body>
+</html>
