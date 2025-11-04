@@ -296,10 +296,8 @@
           <span>1</span>
           <button class="btn btn-success">+</button>
         </div>
-
-        <button class="btn btn-success w-100 py-2 fw-bold" onclick="window.location.href='infor_product.html'" >
-                    🛒 THÊM VÀO GIỎ HÀNG     
-        </button>
+        <button class="btn btn-success w-100 py-2 fw-bold" onclick="if (confirm('Bạn có chắc muốn mua hàng không?')) {alert('Đã mua thành công!');} else { alert('Hủy mua!'); }">🛒 THÊM VÀO GIỎ HÀNG</button>
+        
       </div>
     </div>
   </div>
