@@ -261,9 +261,9 @@ body {
 /* Logo hover */
 .logo img {
   position: fixed;   
-  top: 30px;       
+  top: 40px;       
   left: 10px;         
-  height: 100px;
+  height: 90px;
   cursor: pointer;  
   transition: all 0.3s ease;  /* hiệu ứng mượt */
 }
