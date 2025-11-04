@@ -41,96 +41,120 @@
             <div class="edit-box">
                 <h2>Thông tin phiếu nhập</h2>
                 <form>
+  <div class="row-input">
+    <div class="form-group">
+      <label for="ngaynhap">Ngày nhập:</label>
+      <input type="date" id="ngaynhap" name="ngaynhap">
+    </div>
 
-                    <div class="row-input">
-                    <div class="form-group">
-                      <label for="ngaynhap">Ngày nhập:</label>
-                      <input type="date" id="ngaynhap" name="ngaynhap">
-                    </div>
+    <div class="form-group">
+      <label for="maphieunhap">Mã phiếu nhập:</label>
+      <input type="text" id="maphieunhap" name="maphieunhap" value="PN006">
+    </div>
+  </div>
 
-                    <div class="form-group">
-                    <label for="maphieunhap">Mã phiếu nhập:</label>
-                      <input type="text" id="maphieunhap" name="maphieunhap" value="PN006">
-                    </div>
-            </div>
+  <label for="loai">Chọn sản phẩm nhập:</label>
+  <button type="button" id="add-product-btn">+ Thêm sản phẩm</button>
 
-                    <label for="loai">Chọn sản phẩm nhập:</label>
-                    <div class="product-row">
-                       <label>Sản phẩm 1</label>
-                       <select class="product-select">
-                       <option value="khong" selected>--Chọn sản phẩm--</option>
-                       <option value="tra">Hồng trà đào</option>
-                       <option value="tra">Trà vải lài</option>
-                       <option value="tra">Trà ô long dâu</option>
-                       <option value="trasua">Trà sữa ô long</option>
-                       <option value="trasua">Trà sữa truyền thống</option>
-                       <option value="tra">Trà lựu đỏ</option>
-                       <option value="trasua">Trà kem cheese</option>
-                       <option value="caphe">Cà phê kem cheese</option>
-                       <option value="caphe">Cà phê muối</option>
-                       <option value="caphe">Cà phê sữa</option>
-                       </select>
-                       <label for="soluong">Số lượng:</label>
-                       <input type="number" class="product-qty" value="0">
-                       <label for="gianhap">Giá nhập:</label>
-                       <input type="text" class="gianhap" name="gianhap">
-                    </div>
+  <!-- Bọc các dòng sản phẩm trong container này -->
+  <div id="product-container">
+    <div class="product-row">
+      <label>Sản phẩm 1</label>
+      <select class="product-select">
+        <option value="khong" selected>--Chọn sản phẩm--</option>
+        <option value="tra">Hồng trà đào</option>
+        <option value="tra">Trà vải lài</option>
+        <option value="tra">Trà ô long dâu</option>
+        <option value="trasua">Trà sữa ô long</option>
+        <option value="trasua">Trà sữa truyền thống</option>
+        <option value="tra">Trà lựu đỏ</option>
+        <option value="trasua">Trà kem cheese</option>
+        <option value="caphe">Cà phê kem cheese</option>
+        <option value="caphe">Cà phê muối</option>
+        <option value="caphe">Cà phê sữa</option>
+      </select>
+      <label for="soluong">Số lượng:</label>
+      <input type="number" class="product-qty" value="0">
+      <label for="gianhap">Giá nhập:</label>
+      <input type="text" class="gianhap" name="gianhap">
+    </div>
 
+  </div>
 
-                    <div class="product-row">
-                       <label>Sản phẩm 2</label>
-                       <select class="product-select">
-                       <option value="khong" selected>--Chọn sản phẩm--</option>
-                       <option value="tra">Hồng trà đào</option>
-                       <option value="tra">Trà vải lài</option>
-                       <option value="tra">Trà ô long dâu</option>
-                       <option value="trasua">Trà sữa ô long</option>
-                       <option value="trasua">Trà sữa truyền thống</option>
-                       <option value="tra">Trà lựu đỏ</option>
-                       <option value="trasua">Trà kem cheese</option>
-                       <option value="caphe">Cà phê kem cheese</option>
-                       <option value="caphe">Cà phê muối</option>
-                       <option value="caphe">Cà phê sữa</option>
-                       </select>
-                       <label for="soluong">Số lượng:</label>
-                       <input type="number" class="product-qty" value="0">
-                       <label for="gianhap">Giá nhập:</label>
-                       <input type="text" class="gianhap" name="gianhap">
-                    </div>
-                    
-                    
-                    <label for="tong">Tổng số lượng:</label>
-                    <input type="text" id="tong" name="tong">
+  <label for="tong">Tổng số lượng:</label>
+  <input type="text" id="tong" name="tong" readonly>
 
-                    <label for="tongtien">Tổng số tiền (VNĐ):</label>
-                    <input type="text" id="tongtien" name="tongtien">
+  <label for="tongtien">Tổng số tiền (VNĐ):</label>
+  <input type="text" id="tongtien" name="tongtien" readonly>
 
-                    <button onclick="if (confirm('Bạn có chắc muốn lưu phiếu nhập không?')) {alert('Đã lưu thành công!');} else { alert('Hủy lưu!'); }">Lưu phiếu nhập</button>  
-                </form>
+  <button type="button"
+    onclick="if (confirm('Bạn có chắc muốn lưu phiếu nhập không?')) {alert('Đã lưu thành công!');} else { alert('Hủy lưu!'); }">
+    Lưu phiếu nhập
+  </button>
+</form>
+
             </div>
         </section>
         <script>
-            function tinhTong() {
-            const productRows = document.querySelectorAll(".product-row");
-            let tongSL = 0;
-            let tongTien = 0;
+function tinhTong() {
+  const productRows = document.querySelectorAll(".product-row");
+  let tongSL = 0;
+  let tongTien = 0;
 
-            productRows.forEach(row => {
-            const soLuong = parseFloat(row.querySelector(".product-qty").value) || 0;
-            const giaNhap = parseFloat(row.querySelector(".gianhap").value) || 0;
-            tongSL += soLuong;
-            tongTien += soLuong * giaNhap;
-            });
+  productRows.forEach(row => {
+    const soLuong = parseFloat(row.querySelector(".product-qty").value) || 0;
+    const giaNhap = parseFloat(row.querySelector(".gianhap").value) || 0;
+    tongSL += soLuong;
+    tongTien += soLuong * giaNhap;
+  });
 
-            document.getElementById("tong").value = tongSL;
-            document.getElementById("tongtien").value = tongTien.toLocaleString("vi-VN");
-          }
+  document.getElementById("tong").value = tongSL;
+  document.getElementById("tongtien").value = tongTien.toLocaleString("vi-VN");
+}
 
-  // Gán sự kiện khi người dùng nhập dữ liệu
-            document.querySelectorAll(".product-qty, .gianhap").forEach(input => {
-           input.addEventListener("input", tinhTong);
-          });
-        </script>
+// Gán sự kiện cho các input hiện có
+document.querySelectorAll(".product-qty, .gianhap").forEach(input => {
+  input.addEventListener("input", tinhTong);
+});
+
+// Nút thêm dòng sản phẩm
+document.getElementById('add-product-btn').addEventListener('click', function() {
+  const container = document.getElementById('product-container');
+  const rows = container.getElementsByClassName('product-row');
+  const newIndex = rows.length + 1;
+
+  const newRow = document.createElement('div');
+  newRow.classList.add('product-row');
+  newRow.innerHTML = `
+    <label>Sản phẩm ${newIndex}</label>
+    <select class="product-select">
+      <option value="khong" selected>--Chọn sản phẩm--</option>
+      <option value="tra">Hồng trà đào</option>
+      <option value="tra">Trà vải lài</option>
+      <option value="tra">Trà ô long dâu</option>
+      <option value="trasua">Trà sữa ô long</option>
+      <option value="trasua">Trà sữa truyền thống</option>
+      <option value="tra">Trà lựu đỏ</option>
+      <option value="trasua">Trà kem cheese</option>
+      <option value="caphe">Cà phê kem cheese</option>
+      <option value="caphe">Cà phê muối</option>
+      <option value="caphe">Cà phê sữa</option>
+    </select>
+    <label for="soluong">Số lượng:</label>
+    <input type="number" class="product-qty" value="0">
+    <label for="gianhap">Giá nhập:</label>
+    <input type="text" class="gianhap" name="gianhap">
+  `;
+
+  container.appendChild(newRow);
+
+  // Gán lại sự kiện tính tổng cho input mới
+  newRow.querySelectorAll(".product-qty, .gianhap").forEach(input => {
+    input.addEventListener("input", tinhTong);
+  });
+});
+</script>
+
 
     </body>
 </html>
