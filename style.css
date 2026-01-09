@@ -943,8 +943,9 @@ input[name="slide"] {
   .user-info {
     display: none;
     position: absolute;
-    top: 28px;
+    top: 40px;
     right: 0;
+    /* transform: translateX(-80%); */
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
